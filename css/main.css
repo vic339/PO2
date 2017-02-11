@@ -1,26 +1,253 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
+body{
+	font-family:'Heebo',sans-serif;
+	padding-top: 1em;
+}
+
+.container{
+	width:960px;
+}
+
+.nav-main{
+	background:white;
+	width:100%;
+	top:0;
+	position:fixed;
+	z-index: 1;
+	padding-top: 1em;
+}
+
+/*.nav-list{
+	float: right;
+	padding-left: 1em;
+}*/
+
+.logo{
+	font-style: bold;
+	font-size:30px;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	padding-left: 1em;
+	top:0px;
+}
+
+.float-right{
+	float:right;
+}
+
+a:hover{
+	color:#E8E8E8;
+}
+
+li{
+	list-style:none;
+	margin-left:15px; 
+	margin-top:15px;
+}
+
+.content{
+	margin: 1em;
+	background:white;
+}﻿
+
+.grid-list{
+	padding-top:5em;
+}
+/* Product List */
+
+.colums{
+	display: block;
+    float: left;
+}
+
+.product-item{
+    margin-bottom: 2em;
+    transition: all 1s ease;
+    z-index:-1;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.product-item:hover, .product-item:focus{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+img{
+	max-width: 100%
+}
+
+.img-none-hover{
+  opacity: 0.3;
+  transition: all 1s ease;
+  z-index:-1;
+}
+
+.img-none-hover:hover, .img-none-hover:focus{
+  opacity: 1;
+}
+
+.online-support{
+	right: 1em;
+	bottom: 2em;
+	position:fixed;
+	z-index: 999;
+}
+
+.shopping-bag{
+	right: 1em;
+	bottom: 5em;
+	position:fixed;
+	z-index: 999;
+}
+
+.content-wrapper{
+	margin: 7% 10% 0 10%;
+}
+
+.top-wrapper{
+	top: 0px;
+}
 
 
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 2em;
+  color: white;
+  background-color: white；
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: all 0.5s ease;
+  list-style-type: none;
+}
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
+.button-nav:hover, .button-nav:focus {
+  color: #D5D5D5;
+} 
 
-/* Styling for the navigation button */
+.nav{
+	width:100%;
+	background-color: white;
+	position: fixed;
+	z-index: 20;
+}
 
+.view-more-button{
+	right: 20em;
+	bottom: 20em;
+	position:absolute;
+	z-index: 999;
+}
 
+.slogan{
+	color: white;
+	right: 16em;
+	bottom: 20em;
+	position: absolute;
+	z-index: 999;
+}
 
+button{
+  padding: 1em 3.5em 1em 3.5em;
+  background-color: white;
+  color:#555555;
+  border: none;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 8px 18px 1px rgba(0,0,0,0.15);
+}
 
+button:hover{
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.review-button{
+	margin-top: 2em;
+}
 /* 
   TEXT ELEMENTS -------------------
 */
+h1{
+  color: #555555;
+  font-size: 1em;
+ /* margin: 1em;*/
+  font-weight: bolder;
+  text-transform: uppercase;
+}
 
+h2{
+  color: grey;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
 
+h2.reviews{
+	margin-top: 3em;
+	text-align: center;
+	padding-left: 1em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid grey;
+}
+
+h3{
+  font-size: 1em;
+  color: #729DD6;
+  margin-top: 2em;
+}
+
+p{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+ol{
+  color:#4990E2;
+  font-size: 15px;
+}
+
+ul{
+  color:#4990E2;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+li{
+  padding: 0.3em;
+}
 
 
 /* 
-  COMBINED ELEMENTS -------------------
+  END OF TEXT ELEMENTS -------------------
 */
+
+/*h2.float-left{
+	float: left;
+	padding-top: 0em;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  float：left
+  font-size: 5em；
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 2em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+/*https://css-tricks.com/star-ratings/*/*/

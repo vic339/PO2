@@ -1,5 +1,90 @@
-/* Grids file */
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+	margin-top: -0.5em;
+}
+
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3{
+	width: 100%;
+}
 
 
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+	padding-top: 0.5em;
+}
 
 
+.grid-col-1of4 > .nav-main {
+	width: 100%;
+}
+
+@media (min-width: 48.75em) {
+
+	.grid-col-1of2 {
+		width: 50%;
+	}
+
+	.grid-col-1of2:last-of-type {
+		padding-left: 1rem;
+	}
+
+	.grid-col-1of4 {
+		width: 100%;
+	}
+
+	.grid-col-3of4{
+		width: 100%;
+	}
+	.grid-button{
+		width: 100%;
+	}
+}
+
+@media (min-width: 60em) {
+	
+	.grid-col-1of3 {
+		width: 40%;
+	}
+	.grid-col-3of4{
+		width: 100%;
+	}
+	.grid-col-1of4 {
+		width: 100%;
+	}
+
+	.grid-button{
+		width: 40%;
+	}
+
+}
+@media (min-width: 73em) {
+	
+	.grid-col-1of2 {
+		width: 50%;
+	}
+	.grid-col-2of3 {
+		width: 66.666%;
+	}
+
+	.grid-col-1of3 {
+		width: 30%;
+	}
+	.grid-col-3of4{
+		width: 75%;
+	}
+	.grid-col-1of4 {
+		width: 20%;
+	}
+
+	.grid-button{
+		width: 20%;
+	}
+
+}
