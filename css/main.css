@@ -35,6 +35,7 @@ a{
 	top:0px;
 }
 
+
 .float-right{
 	float:right;
 }
@@ -207,6 +208,11 @@ h3{
 p{
   font-size: 1em;
   font-weight: bold;
+}
+
+.figurecap{
+  font-size: 0.8em;
+  font-weight: normal;
 }
 
 ol{

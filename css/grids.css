@@ -87,4 +87,9 @@
 		width: 20%;
 	}
 
+	.grid-side{
+		width: 5%;
+		text-align: vertical;
+	}
+
 }
