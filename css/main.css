@@ -77,6 +77,11 @@ li{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
 
+.events{
+    margin: 1em;
+
+}
+
 img{
 	max-width: 100%
 }
@@ -136,6 +141,7 @@ img{
 	background-color: white;
 	position: fixed;
 	z-index: 20;
+  top:0;
 }
 
 .view-more-button{
@@ -229,6 +235,11 @@ ul{
 
 li{
   padding: 0.3em;
+}
+
+section{
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 
