@@ -1,61 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8" />
     <meta name"viewport" content="width=device-width, intitial-scale=1.0">
 
-	 <title>Homepage</title>
+	  <title>Homepage</title>
 
-	 <link href="css/grids.css" rel="stylesheet">
-	 <link href="css/main.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  	 <link rel="stylesheet" href="css/grids.css" >
+  	 <link rel="stylesheet" href="css/main.css" >
+     <link rel="stylesheet" href="css/normalize.css"> 
+     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+
   </head>
 
   <body>
 
-  <!-- <FIXED HORIZONTAL NAVIGATION > -->
+      <!-- <FIXED HORIZONTAL NAVIGATION > -->
+    <div class="nav">
+            <div class="button-nav grid-col-1of4">
+              <h1 class="logo"><a href="index.html">CHRON</a></h1>
+            </div>
 
-  <div class="online-support">
-        <img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/ask_question-32.png" title="Ask Question" width="32">  
-  </div>
-  <div class="shopping-bag">
-        <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32">
-  </div>
+            <div class="button-nav grid-col-3of4">
+         
+              <div class="button-nav grid-button" >
+                <a href="product_list.html">Products</a>
+              </div> 
 
-      <div class="nav">
-        <div class="button-nav grid-col-1of4">
-          <h1 class="logo"><a href="#">CHRON</a></h1>
-        </div>
+              <div class="button-nav grid-button" >
+                <a href="events.html">Events</a>
+              </div>
 
-        <div class="button-nav grid-col-3of4">
-     
-            <div class="button-nav grid-button" ><a href="file:///Users/airywolf/Desktop/IAT%20339/P02/_working_files/product_list.html">Products</a></div>
-            
-            <div class="button-nav grid-button" ><a href="file:///Users/Song/Desktop/_working_files/events.html">Events</a></div>
-            <div class="button-nav grid-button" ><a href="file:///Users/Song/Desktop/_working_files/about us.html">About us</a></div>
-            <div class="button-nav grid-button" ><a href="file:///Users/Song/Desktop/_working_files/account.html">Account</a></div>
+              <div class="button-nav grid-button" >
+                <a href="about_us.html">About us</a>
+              </div>
 
-          </div>
+              <div class="button-nav grid-button" >
+                <a href="account.html">Account</a>
+              </div>
 
-      </div>
-  
-<div class="grid-grow content-wrapper">
+            </div>
 
-      <div>
-        <img src="img/p10.jpg" title="cool guy with watch" >
-      </div>
-      <h1 class="slogan">You may delay but time will not.</h1>
-      <button class="view-more-button" type="button"><a href="file:///Users/airywolf/Desktop/IAT%20339/P02/_working_files/product_list.html">View More</a></button>
+    </div>
 
-
- </div>
+    <!-- context (picture, button and text) on the main page  -->
       
- </body>
+    <div class="content-wrapper grid-row">
 
+            <div class="content-img">
+              <img src="img/p10.jpg" title="cool guy with watch">
+            </div>
 
+            <div class="content-text">
+              <h1 id="slogan">You may delay but time will not.</h1>
+            </div>
 
+            <div class="content-button">
+              <button class="view-more-button" type="button">
+                <a id="banner-content" href="product_list.html">View More</a>
+              </button>
+            </div>
+    </div>
+    
 
+        <div class="content-wrapper grid-row">
 
+            <div class="content-img">
+              <img src="img/p10.jpg" title="cool guy with watch">
+            </div>
 
+            <div class="content-text">
+              <h1 id="slogan">You may delay but time will not.</h1>
+            </div>
+
+            <div class="content-button">
+              <button class="view-more-button" type="button">
+                <a id="banner-content" href="product_list.html">View More</a>
+              </button>
+            </div>
+    </div>
+    <!-- online-support and shopping bag icon -->
+
+    <div class="online-support">
+          <img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/ask_question-32.png" title="Ask Question" width="32">
+    </div>
+
+    <div class="shopping-bag">
+          <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32">
+    </div>
+
+  </body>
 
 </html>
