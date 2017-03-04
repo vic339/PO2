@@ -116,7 +116,6 @@ img{
   position: relative;
   height:auto;
   top:2rem;
-  left:1px;
   margin:0 auto;
 }
 
@@ -178,7 +177,7 @@ img{
 }
 
 button{
-  padding: 1em 1em 1em 1em;
+  padding: 0.5em 5em 0.5em 5em;
   background-color: white;
   color:#555555;
   border: none;
@@ -305,10 +304,13 @@ section{
 
 .input_form input{
     font-size: 0.8em;
-    padding: 1em 1.5em;
+    text-align: left;
+    padding: 1em 5em 1em 1em;
+    margin: 1em;
     border: 1px solid #E2ECF8;
-    border-radius: 3px;
+    border-radius: 0.3em;
     transition: all 1s ease;
+    text-align: left;
 }
 
 .input_form input:hover{
@@ -317,7 +319,44 @@ section{
   transition: all 1s ease;
 }
 
+.login-box{
+  text-align: center;
+  border: 1.5px solid #E2ECF8;
+  margin: 1em;
+  padding: 1em 0em 3em 0em;
+  }
 
+.login-button{
+  margin-top: 1em;
+}
+
+.payment-box{
+  text-align: left;
+  margin: 0em;
+  padding:0em;
+  }
+
+.payment-button{
+  margin-top: 1em;
+}
+
+.select_form{
+    font-size: 0.8em;
+    text-align: left;
+    margin: 1em;
+    height: 3.5em;
+    width: 16em;
+    border: 2px solid #E2ECF8;
+    border-radius: 0.3em;
+    transition: all 1s ease;
+    text-align: left;
+}
+
+.select_form input:hover{
+  outline: none;
+  border: 1.5px solid #4990E2;
+  transition: all 1s ease;
+}
 
 /* 
   END OF TEXT ELEMENTS -------------------
