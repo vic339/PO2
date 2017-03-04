@@ -8,10 +8,6 @@
 	margin-top: -0.5em;
 }
 
-.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3{
-	width: 100%;
-}
-
 
 .grid-row::after {
 	content: "";
