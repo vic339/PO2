@@ -8,6 +8,18 @@ body{
 
 }*/
 
+.check{
+  width:80%;
+  padding-bottom:2em;
+  padding-top:2em;
+  display:inline-block;
+}
+
+.next_button{
+  text-align: right;
+  margin-right:2em;
+}
+
 .nav-main{
 	background:white;
 	width:100%;
@@ -116,8 +128,8 @@ img{
   position: relative;
   height:auto;
   top:2rem;
-  left:1px;
-  margin:0 auto;
+  margin:0 2em 1em 2em;
+  display:inline-block;
 }
 
 #slogan{ 
@@ -298,7 +310,9 @@ section{
 }
 
 .body_move_down{
+  width:100%;
   margin-top: 5em;
+  padding-left:8em;
 }
 
 
