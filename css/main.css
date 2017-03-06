@@ -95,10 +95,10 @@ a:hover{
     background-color: #E8E8E8;
 }
 
-.product-wrapper{
+/*.product-wrapper{
     position: relative;
 
-}
+}*/
 
 .product-wrapper img{
   display: block;
@@ -305,13 +305,16 @@ ul{
 /*  color:#4990E2;
   font-size: 12px;
   text-transform: uppercase;*/
-  text-align: left;
+  background-color: rgb(233,233,233);
+  text-align: center;
   list-style: none;
+  padding-top: 4em;
+  padding-bottom: 4rem;
 }
 
-/*li{
+li{
   padding: 0.3em;
-}*/
+}
 
 section{
   margin-left: 1em;
@@ -422,7 +425,10 @@ section{
 >>>>>>> Stashed changes
 
 .footer{
-  background-color:rgb(233,233,233);
+  background-color:black;
+/*  background-color:rgb(233,233,233);*/
+  text-align: center;
+  display: block;
 }
 
 .product-banner{
