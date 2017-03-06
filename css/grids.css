@@ -59,8 +59,9 @@
 @media (min-width: 40em) {
 	
 	.grid-col-1of3 {
-		width: 40%;
+		width: 50%;
 	}
+
 	.grid-col-3of4{
 		width: 100%;
 	}
@@ -81,7 +82,7 @@
 @media (min-width: 73em) {
 
 	.grid-col-1of2 {
-		width: 40%;
+		width: 50%;
 	}
 
 	.grid-col-2of3 {
@@ -89,13 +90,13 @@
 	}
 
 	.grid-col-1of3 {
-		width: 30%;
+		width: 33.3%;
 	}
 	.grid-col-3of4{
 		width: 75%;
 	}
 	.grid-col-1of4 {
-		width: 22%;
+		width: 25%;
 	}
 
 	.grid-button{

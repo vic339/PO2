@@ -169,6 +169,7 @@ img{
   margin:0 auto;
 }
 
+
 #slogan{ 
   font-size: 18px;
   color: white;
@@ -277,31 +278,40 @@ h3{
   margin-top: 1.5em;
 }
 
+h4{
+  font-size: 1rem;
+  color: black;
+  z-index: 999;
+  padding-bottom: 15rem;
+
+}
+
+
 p{
   font-size: 1em;
   font-weight: normal;
 }
 
-.figurecap{
-  font-size: 0.8em;
-  font-weight: normal;
-}
 
-ol{
-  color:#4990E2;
-  font-size: 15px;
+figcaption{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -4.5em;
+  color: white;
 }
 
 ul{
-  color:#4990E2;
-  font-size: 15px;
-  text-transform: uppercase;
+/*  color:#4990E2;
+  font-size: 12px;
+  text-transform: uppercase;*/
   text-align: left;
+  list-style: none;
 }
 
-li{
+/*li{
   padding: 0.3em;
-}
+}*/
 
 section{
   margin-left: 1em;
@@ -314,7 +324,7 @@ section{
   width:40%;
   height:auto;
   position:absolute;
-  top:20%;
+  top:15%;
   left:60%;
 }
 
@@ -333,6 +343,7 @@ section{
      height:auto;
 } 
 
+<<<<<<< Updated upstream
 .cart_title{
   padding-top: 3em;
   display: inline-block;
@@ -387,8 +398,9 @@ section{
   padding: 0em 0.5em 0em 0em;
   }
 
-.payment-button{
-  margin-top: 1em;
+.content-img-part2{
+  transition: all 1s ease;
+
 }
 
 .select_form{
@@ -405,10 +417,12 @@ section{
     background-color: white;
 }
 
-.select_form input:hover{
-  outline: none;
-  border: 1.5px solid #4990E2;
-  transition: all 1s ease;
+
+
+>>>>>>> Stashed changes
+
+.footer{
+  background-color:rgb(233,233,233);
 }
 
 .product-banner{
