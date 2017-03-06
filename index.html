@@ -61,19 +61,26 @@
               <a href="#">Account</a>
           </div>
 
-            <script>
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                    // document.getElementById("main").style.marginLeft = "250px";
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                }
+<section>
+    <div id="mySearch" class="sidesearch">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+        <form action="#" class="input_form"> 
+        <input type="text" name=" 1" Placeholder="What do you want?" class="input_account"> </form>
+        <p>Quick Links</p>
+        <ul class="quick-links">
+          <li>Find a store</li>
+          <li>Hot Items</li>
+          <li>On Sale</li>
+        </ul>
+<!--         <img src="img/search-icon.png" class="search-pop" title="search"> -->
+    </div>
 
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    // document.getElementById("main").style.marginLeft= "0";
-                    document.body.style.backgroundColor = "white";
-                }
-            </script>
+      <script>
+          function openSearch() {
+              document.getElementById("mySearch").style.width = "400px";
+              // document.getElementById("main").style.marginLeft = "250px";
+              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
 
       <!-- Use any element to open the sidenav -->
           <div class="hamburger">

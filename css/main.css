@@ -488,7 +488,7 @@ section{
 
 /* The Search icon links */
 .sidesearch {
-    height: 10%; 
+    height: 30%; 
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     top: 0;
@@ -572,6 +572,18 @@ textarea{
 .full-img{
   width: 100%;
   height: 100%;
+}
+
+.quick-links{
+  list-style-type:none;
+  padding:15px;
+}
+
+.cart-button{
+  background-color: red;
+  margin-top: 200px;
+  width:30%;
+  display: block;
 }
 /* 
   END OF TEXT ELEMENTS -------------------
