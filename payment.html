@@ -6,17 +6,16 @@
     <meta charset="utf-8" />
     <meta name"viewport" content="width=device-width, intitial-scale=1.0">
 
-	  <title>Homepage</title>
+    <title>Payment Information</title>
 
-  	 <link rel="stylesheet" href="css/grids.css" >
-  	 <link rel="stylesheet" href="css/main.css" >
+     <link rel="stylesheet" href="css/grids.css" >
+     <link rel="stylesheet" href="css/main.css" >
      <link rel="stylesheet" href="css/normalize.css"> 
      <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 
   </head>
 
   <body>
-
       <!-- <FIXED HORIZONTAL NAVIGATION > -->
     <div class="nav">
             <div class="button-nav grid-col-1of4">
@@ -48,41 +47,57 @@
 <div class="body_move_down"> 
 
       <div class="grid-row content-wrapper">
-          <div class="grid-col-1of2">
-                  <img src="img/watch1.jpg" alt="placeholder image">
-             </div>
-
-              <div class="grid-col-1of4">
-                  <div class="cart_title">
-                       <h3>Product Name</a></h3>
-                       <h2 class="price">Chorn E Series</h2>
-                  </div>
-             </div>
-
-             <div class="grid-col-1of2">
-                  <div class="cart_title">
-                      <h3>Quantity</a></h3>
+            <div class="grid-col-1of3 payment-box">
+                      <h3>Information</h3>
                       <form action="#" class="input_form"> 
-                      <input type="text" name=" 1" Placeholder=" 1"> </form>
-                  </div>
-             </div>
-
-             <div class="grid-col-1of4">
-                  <div class="cart_title">
-                       <h3>Price</h3>
-                       <h2 class="price">299 CAD</h2>
-                  </div>
-             </div>
-          </div>
-
-           <div class="grid-row content-wrapper">
-            <div class="grid-col-1of3">
-              <button type="button">Continue to shop</button>
+                      <input type="text" name=" 1" Placeholder="First Name"> </form>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Last Name"> </form> 
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Email/Username"> </form>
+                      <form action="#" class="input_form">
+                      <input type="text" name=" 1" Placeholder="Adress"> </form>
+                      <select class="select_form">
+                        <option value="saab">United States</option>
+                        <option value="vw">China</option>
+                        <option value="audi" selected>Canada</option>
+                      </select>
+                      <select class="select_form">
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                        <option value="ON">ON</option>
+                      </select>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="City"> </form>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Postcode"> </form>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Contact Number"> </form>
             </div>
-            <div class="grid-col-1of3">
-              <button type="button">Next</button>
+
+            <div class="grid-col-1of3 payment-box">
+                      <h3>Payment Information</h3>
+                      <select class="select_form">
+                        <option value="Master">Master</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Paypal">Paypal</option>
+                      </select>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Card Number"> </form>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Expire Date (mm/yy)"> </form>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Security Code"> </form>
             </div>
-          </div>
+
+            <div class="grid-col-1of3 payment-box">
+                      <h3>Summary</h3>
+                      <img src="img/watch1.jpg" alt="placeholder image">
+                      <h2 class="price">Chorn E Series</h2>
+                      <h3>Total Price</h3>
+                      <p>299 CAD * 1</p>
+                      <button type="button" class="login-button">Review Order</button>
+            </div>
 
 </div>
     <!-- online-support and shopping bag icon -->
