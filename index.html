@@ -45,6 +45,7 @@
 
     </div>
 
+<section id="main"> <!-- content of index page -->
     <!-- context (picture, button and text) on the main page  -->
       
     <div class="content-wrapper grid-row">
@@ -57,31 +58,56 @@
               <h1 id="slogan">You may delay but time will not.</h1>
             </div>
 
-            <div class="content-button">
-              <button class="view-more-button" type="button">
-                <a id="banner-content" href="product_list.html">View More</a>
-              </button>
-            </div>
     </div>
     
 
-        <div class="content-wrapper grid-row">
+    <div class="grid-row content-wrapper center">
 
-            <div class="content-img">
-              <img src="img/p10.jpg" title="cool guy with watch">
-            </div>
+      <div class="grid-col-1of3 homepage-small">
+        <img src="img/homepage_small1.jpg" title="watches">
+      </div>
+      <div class="grid-col-1of3 homepage-small">
+        <img src="img/homepage_small1.jpg" title="watches">
+      </div>
+      <div class="grid-col-1of3 homepage-small">
+        <img src="img/homepage_small1.jpg" title="watches">
+      </div>
 
-            <div class="content-text">
-              <h1 id="slogan">You may delay but time will not.</h1>
-            </div>
-
-            <div class="content-button">
-              <button class="view-more-button" type="button">
-                <a id="banner-content" href="product_list.html">View More</a>
-              </button>
-            </div>
     </div>
     <!-- online-support and shopping bag icon -->
+
+</section>
+
+<section> <!-- sidebar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><h2>CHRON</h2></a>
+        <a href="#">Watches</a>
+        <a href="#">Events</a>
+        <a href="#">About Us</a>
+        <a href="#">Account</a>
+    </div>
+
+      <script>
+          function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              // document.getElementById("main").style.marginLeft = "250px";
+              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+
+          function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              // document.getElementById("main").style.marginLeft= "0";
+              document.body.style.backgroundColor = "white";
+          }
+      </script>
+
+<!-- Use any element to open the sidenav -->
+    <div class="hamburger">
+      <span onclick="openNav()"><img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/ask_question-32.png" title="Ask Question" width="32"></span>
+    </div>
+
+</section>
 
     <div class="online-support">
           <img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/ask_question-32.png" title="Ask Question" width="32">
