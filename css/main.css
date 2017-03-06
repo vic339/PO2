@@ -28,26 +28,39 @@ section{
 	padding-left: 1em;
 }
 
-.logo{
-	font-style: bold;
-	font-size:20px;
-}
-
 a{
 	text-decoration: none;
 	color:black;
 	transition: all 0.5s ease;
-	padding-left: 3em;
+	padding-left: 1.8em;
+  padding-right: 0.5em
 	top: 0px;
-  font-size: 16px;
+}
+
+a:hover{
+  color:#E8E8E8;
+}
+
+.logo{
+  font-style: bold;
+  font-size:20px;
+  padding-right: 1em;
 }
 
 .float-right{
 	float:right;
 }
 
-a:hover{
-	color:#E8E8E8;
+.search{
+  width: 30px;
+  float:right;
+}
+
+.search-small{
+  width: 30px;
+  right:10px;
+  top:15px;
+  position: fixed;
 }
 
 /*li{
@@ -96,6 +109,7 @@ a:hover{
 .product-wrapper:hover img{
   opacity: 0.3;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05); 
 }
 
 .product-wrapper .product-wrapper-content{
@@ -148,10 +162,10 @@ img{
 
 .content-wrapper{
  /* border:1px solid red;*/
-  width:80%;
+  width:85%;
   position: relative;
   height:auto;
-  top:2rem;
+  top: 3em;
   margin:0 auto;
 }
 
@@ -161,10 +175,6 @@ img{
   max-width:70%;
 }
 
-.content-wrapper img{
-    width:100%;
-    height:100%;
-}
 
 .top-wrapper{
 	top: 0px;
@@ -189,7 +199,7 @@ img{
   color: #D5D5D5;
 } 
 
-.filter{
+/*.filter{
   display: inline-block;
   padding: 0.5em;
   border-radius: 0.25em;
@@ -197,7 +207,7 @@ img{
   -webkit-transition: background-color 0.5s ease-out;
   list-style-type: none;
 }
-
+*/
 .nav{
 	width:100%;
 	background-color: white;
@@ -207,11 +217,6 @@ img{
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
 }
 
-.view-more-button{
-  width:100%;
-  height:auto;
-	z-index:999;
-}
 
 button{
   padding: 0.5em 5em 0.5em 5em;
@@ -233,6 +238,12 @@ button:hover{
 .review-button{
 	margin-top: 2em;
 }
+
+.img-pdp{
+  width:50%;
+  height: auto;
+}
+
 /* 
   TEXT ELEMENTS -------------------
 */
@@ -314,11 +325,6 @@ section{
     top:30%;
     left:71%;
     border:1px solid red;
-}
-
-.content-img{
-    width:100%;
-    height:100%;
 }
 
 #banner-content{
@@ -421,7 +427,7 @@ section{
     left: 0;
     background-color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 50px; /* Place content 60px from the top */
+    padding-top: 0px; /* Place content 60px from the top */
     transition: 0.8s; /* 0.8 second transition effect to slide in the sidenav */
     z-index: 9999;
 }
@@ -440,7 +446,7 @@ section{
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: rgba(200,200,200, 0.8);
 }
 
 /* Position and style the close button (top right corner) */
@@ -452,35 +458,100 @@ section{
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation 
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-*/
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 
+
+
+/* The Search icon links */
+.sidesearch {
+    height: 10%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    right: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.8s; /* 0.8 second transition effect to slide in the sidenav */
+    z-index: 9999;
+}
+
+.sidesearch a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    z-index: 9999;
+    display: inline-block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidesearch a:hover, .offcanvas a:focus{
+    color: rgba(200,200,200, 0.8);
+}
+
+/* Position and style the close button (top right corner) */
+.sidesearch .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidesearch {padding-top: 15px;}
+    .sidesearch a {font-size: 18px;}
+}
+
+.search-pop{
+  width: 30px;
+}
+
 .hamburger{
     position: fixed;
-    left: 2em;
-    top: 5em;
+    left: 15px;
+    top: 15px;
+    width: 25px;
+}
+
+.small-logo{
+    position: fixed;
+    left: 50px;
+    top: -8px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .homepage-small{
-  position: center;
   margin: 10px;
+  float: left;
+  display:inline-block 
 }
-
 
 .center {
     margin: auto;
     width: 80%;
     padding: 20px;
+}
+
+
+textarea{
+  height: auto;
+  float: right;
+  margin-top: -1em;
+}
+
+.full-img{
+  width: 100%;
+  height: 100%;
 }
 /* 
   END OF TEXT ELEMENTS -------------------
