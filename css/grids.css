@@ -189,6 +189,10 @@
 		display: none;
 	}
 
+	.content-text-list{
+		display: none;
+	}
+
 	.grid-col-1of12 {
 		width: 48%;
 	}
@@ -198,7 +202,7 @@
 	}
 
 	.grid-col-1of4{
-		width: 40%;
+		width: 48%;
 	}
 
 	.grid-col-1of3{
@@ -247,6 +251,10 @@
 	}
 
 	.content-text{
+		display: none;
+	}
+
+	.content-text-list{
 		display: none;
 	}
 

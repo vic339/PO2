@@ -190,11 +190,6 @@ img{
 }
 
 
-#slogan{ 
-  font-size: 18px;
-  color: white;
-  max-width:70%;
-}
 
 
 .top-wrapper{
@@ -350,6 +345,22 @@ li{
   left:60%;
 }
 
+.content-text-list{
+  color: white;
+  width:35%;
+  height:auto;
+  position:absolute;
+  top:50%;
+  left:68%;
+  z-index: 9999999;
+}
+
+#slogan{ 
+  font-size: 18px;
+  color: white;
+  max-width:70%;
+}
+
 .content-button{
     width:15%;
     height:auto;
@@ -451,9 +462,9 @@ li{
 }
 
 .product-banner{
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 2em;
+    max-width: 98%;
+    margin-bottom: 1em;
+    padding:3em;
 }
 
 
