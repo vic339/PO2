@@ -15,6 +15,10 @@ section{
   display: inline-block;
 }
 
+#main{
+  margin-top: 15em；
+}
+
 .nav-main{
 	background: white;
 	width:100%;
@@ -161,9 +165,9 @@ img{
   opacity: 0.3;
 }
 
-.online-support{
+.account-icon{
 	right: 1em;
-	bottom: 2em;
+	bottom: 1em;
 	position:fixed;
 	z-index: 999;
 }
@@ -176,14 +180,14 @@ img{
 }
 
 
-/*
+
 .content-wrapper{
-  border:1px solid red;
+/*  border:1px solid red;
   width:95%;
-  position: relative;
-  top: 3em;
-  color:black;
-}*/
+  position: relative;*/
+/*  top: 3em;*/
+/*  color:black;*/
+}
 
 
 #slogan{ 
@@ -338,12 +342,11 @@ li{
 }*/
 
 .content-text{
-  font-size: 1rem;
   color: white;
-  width:40%;
+  width:35%;
   height:auto;
   position:absolute;
-  top:15%;
+  top:40%;
   left:60%;
 }
 
@@ -369,7 +372,7 @@ li{
 }
 
 .body_move_down{
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .input_form input{
@@ -395,26 +398,25 @@ li{
 
 .login-box{
   text-align: center;
-  border: 1.5px solid #E2ECF8;
   margin: 0.5em;
   padding: 2em 0em ;
   }
 
 .signup-button{
-  margin: 1em;
+  margin: 2em;
   font-size: 15px;
 }
 
 .login-button{
-  margin: 1em;
+  margin: 2em;
   font-size: 15px;
   border: 2px solid #E2ECF8;
 
 }
 
 .payment-box{
-  text-align: left;
-  padding: 0em 0.5em 0em 0em;
+  text-align: center;
+  padding: 3em;
   }
 
 .content-img-part2{
@@ -423,6 +425,7 @@ li{
 }
 
 .select_form{
+  position: relative;
     font-size: 0.8em;
     text-align: left;
     margin: 2em 1em 1em 1em;
@@ -519,7 +522,7 @@ li{
 
 /* The Search icon links */
 .sidesearch {
-    height: 30%; 
+    height: 40%; 
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     top: 0;
@@ -573,7 +576,6 @@ li{
     height: 100%; 
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    top: 0;
     right: 0;
     background-color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -614,8 +616,15 @@ li{
 }
 
 .cart-small{
-  padding:1em;
+  padding:1em 2.5em;
   margin-top: 1em;
+  text-align: center；
+}
+
+.sidecart button{
+  width: 80%;
+  margin-left:2em;
+
 }
 
 .homepage-small{
@@ -632,7 +641,6 @@ li{
     padding: 20px;
 }
 
-
 textarea{
   height: auto;
   float: right;
@@ -645,8 +653,17 @@ textarea{
 }
 
 .quick-links{
-  list-style-type:none;
-  padding:15px;
+  padding:0 50px;
+  background-color: white;
+  float: left;
+}
+
+.quick-links p{
+  font-size: 15px;
+}
+
+.sidesearch p{
+  padding-left: 15px;
 }
 
 .cart-button{
@@ -656,9 +673,19 @@ textarea{
   display: block;
 }
 
+.contact-left{
+  margin-top: 10px;
+  padding: 30px;
+}
+.contact-right{
+  margin-top: 30px;
+  padding-left: 5em;
+}
+.contact-right p{
+  width:80%;
+}
 
-
-.textOverImage{
+/*.textOverImage{
   background-image: url(img/watch1-pdp.jpg);
   width:300px;
   height:300px;
@@ -669,9 +696,9 @@ textarea{
   transition:0.5s;
 
 }
+*/
 
-
-textOverImage:hover{
+/*textOverImage:hover{
   background-size: 110%;
 }
 
@@ -703,7 +730,34 @@ textOverImage:after{
   color:3fff;
   font-weight: bold;
   font-size: 1em;
+}*/
+
+.icon{
+  width: 28px;
+  height: auto;
 }
+
+.big-title{
+  padding: 1em 1em 0.5em 1em;
+  text-align: center;
+/*  border-bottom:1px solid ;*/
+box-shadow: 0 2px 2px 1px rgba(200,200,200,0.1);
+}
+
+
+.contact-ways{
+  text-align: center;
+}
+
+.map{
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+/*.cart-small input{
+  width: 30%;
+}*/
+
 
 /* 
   END OF TEXT ELEMENTS -------------------
