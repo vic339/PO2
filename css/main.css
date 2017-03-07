@@ -133,26 +133,39 @@ a:hover{
   display: block;
   opacity: 1;
   transition: all 1s ease;
+  padding:10px;
+  box-shadow: 0 8px 18px 1px rgba(0,0,0,0.15);
 }
 
 .product-wrapper:hover img{
-  opacity: 0.3;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-  transform: scale(1.05); 
+  opacity: 0.2;
+  transform: scale(0.9); 
+  box-shadow:none;
 }
 
 .product-wrapper .product-wrapper-content{
     position: relative;
     opacity: 0;
-    padding: 5px 5px;
-    top:-50px;
-    color: white;
+    width: 100%
+    top: -180px;
+    left:-5px;
+    color: black;
+    font-weight: bold;
     text-align: center;
     transition: all 1s ease;
-  }
+    font-size: 25px;
+    text-transform: none;
+}
 
 .product-wrapper:hover .product-wrapper-content {
     opacity: 0.8;
+    font-weight: bold;
+}
+
+#overlay-text h1{
+/*  background-color: #E2ECF8;*/
+  top:50%
+  left:50%;
 }
 
 .events{
@@ -161,7 +174,8 @@ a:hover{
 
 img{
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%
 }
 
@@ -531,6 +545,21 @@ section{
     .sidenav a {font-size: 18px;}
 }
 
+.hamburger{
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    width: 25px;
+}
+
+.small-logo{
+    position: fixed;
+    left: 50px;
+    top: -8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 
 /* The Search icon links */
@@ -578,29 +607,68 @@ section{
     .sidesearch a {font-size: 18px;}
 }
 
+
 .search-pop{
   width: 30px;
 }
 
-.hamburger{
-    position: fixed;
-    left: 15px;
-    top: 15px;
-    width: 25px;
+
+/* The Cart icon links */
+.sidecart {
+    height: 100%; 
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    right: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.8s; /* 0.8 second transition effect to slide in the sidenav */
+    z-index: 9999;
 }
 
-.small-logo{
-    position: fixed;
-    left: 50px;
-    top: -8px;
-    font-size: 20px;
-    font-weight: bold;
+.sidecart a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    z-index: 9999;
+    display: inline-block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidecart a:hover, .offcanvas a:focus{
+    color: rgba(200,200,200, 0.8);
+}
+
+/* Position and style the close button (top right corner) */
+.sidecart .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidecart {padding-top: 15px;}
+    .sidecart a {font-size: 18px;}
+}
+
+.cart-small{
+  padding:1em;
+  margin-top: 1em;
 }
 
 .homepage-small{
   margin: 10px;
   float: left;
-  display:inline-block 
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center {

@@ -16,7 +16,6 @@
   </head>
 
   <body>
-
       <!-- <FIXED HORIZONTAL NAVIGATION > -->
     <div class="nav">
             <div class="button-nav grid-col-1of4">
@@ -26,7 +25,7 @@
             <div class="button-nav grid-col-3of4">
 
                 <div class="button-nav grid-button" >
-                  <a href="product_list.html">Products</a>
+                  <a href="product_list.html">Watches</a>
                 </div> 
 
                 <div class="button-nav grid-button" >
@@ -49,8 +48,6 @@
     </div>
 
 
-
-
       <section> <!-- sidebar -->
           <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -61,27 +58,35 @@
               <a href="#">Account</a>
           </div>
 
-<section>
+    <section>
+
+    <script> 
+                function openNav() { 
+                    document.getElementById("mySidenav").style.width = "220px"; 
+                    // document.getElementById("main").style.marginLeft = "250px"; 
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                } 
+
+                 function closeNav() { 
+                    document.getElementById("mySidenav").style.width = "0"; 
+                    // document.getElementById("main").style.marginLeft= "0"; 
+                    document.body.style.backgroundColor = "white"; 
+                } 
+  </script> 
+
+
     <div id="mySearch" class="sidesearch">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
         <form action="#" class="input_form"> 
         <input type="text" name=" 1" Placeholder="What do you want?" class="input_account"> </form>
-        <p>Quick Links</p>
-        <ul class="quick-links">
-          <li>Find a store</li>
-          <li>Hot Items</li>
-          <li>On Sale</li>
-        </ul>
-<!--         <img src="img/search-icon.png" class="search-pop" title="search"> -->
+            <p>Quick Links</p>
+            <ul class="quick-links">
+              <li>Find a store</li>
+              <li>Hot Items</li>
+              <li>On Sale</li>
+            </ul>
+    <!--<img src="img/search-icon.png" class="search-pop" title="search"> -->
     </div>
-
-      <script>
-          function openSearch() {
-              document.getElementById("mySearch").style.width = "400px";
-              // document.getElementById("main").style.marginLeft = "250px";
-              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-          }
-
       <!-- Use any element to open the sidenav -->
           <div class="hamburger">
             <span onclick="openNav()"><img src="img/ham-icon.png" title="hamburger"></span>
@@ -90,33 +95,84 @@
 
       </section>
 
-      <section>
-          <div id="mySearch" class="sidesearch">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
-              <form action="#" class="input_form"> 
-              <input type="text" name=" 1" Placeholder="Timeless Series" class="input_account"> </form>
-      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> -->
-          </div>
 
-            <script>
-                function openSearch() {
-                    document.getElementById("mySearch").style.width = "380px";
-                    // document.getElementById("main").style.marginLeft = "250px";
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                }
+      <section> 
+          <div id="mySearch" class="sidesearch"> 
+              <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a> 
+              <form action="#" class="input_form">  
+              <input type="text" name=" 1" Placeholder="Timeless Series" class="input_account"> </form> 
+      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
+          </div> 
+       
+            <script> 
+                function openSearch() { 
+                    document.getElementById("mySearch").style.width = "380px"; 
+                    // document.getElementById("main").style.marginLeft = "250px"; 
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                } 
+       
+                function closeSearch() { 
+                    document.getElementById("mySearch").style.width = "0"; 
+                    // document.getElementById("main").style.marginLeft= "0"; 
+                    document.body.style.backgroundColor = "white"; 
+                } 
+            </script> 
+       
+          <div class="search-small">  
+                 <span onclick="openSearch()"><img src="img/search-icon.png" class="search" title="search"></span> 
+          </div> 
+       
+      </section> 
 
-                function closeSearch() {
-                    document.getElementById("mySearch").style.width = "0";
-                    // document.getElementById("main").style.marginLeft= "0";
-                    document.body.style.backgroundColor = "white";
-                }
-            </script>
+      <section> 
+          <div id="myCart" class="sidecart"> 
+              <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a> 
 
-          <div class="search-small"> 
-                 <span onclick="openSearch()"><img src="img/search-icon.png" class="search" title="search"></span>
-          </div>
+                <div class="cart-small">
+                  <img src="img/watch1.jpg" alt="placeholder image">
+  
+                  <div class="cart_title">
+                       <h3>Product Name</a></h3>
+                       <h2 class="price">Chorn E Series</h2>
+                  </div>
 
-      </section>
+                  <div class="cart_title">
+                      <h3>Quantity</a></h3>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder=" 1"> </form>
+                  </div>
+
+                  <div class="cart_title">
+                       <h3>Price</h3>
+                       <h2 class="price">299 CAD</h2>
+                  </div>
+
+                  <button type="button" class="login-button">Check Out</button>
+                      
+      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
+              </div> 
+            </div>
+       
+            <script> 
+                function openCart() { 
+                    document.getElementById("myCart").style.width = "280px"; 
+                    // document.getElementById("main").style.marginLeft = "250px"; 
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                } 
+       
+                function closeCart() { 
+                    document.getElementById("myCart").style.width = "0"; 
+                    // document.getElementById("main").style.marginLeft= "0"; 
+                    document.body.style.backgroundColor = "white"; 
+                } 
+            </script> 
+       
+          <div class="shopping-bag">  
+                 <span onclick="openCart()"><img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32"></span> 
+          </div> 
+       
+      </section> 
+
 
 
       <section id="main"> <!-- content of index page -->
@@ -141,7 +197,8 @@
 
             <div class="product-wrapper grid-col-1of3 homepage-small">
                      <img src="img/homepage_small1.jpg" alt="placeholder image">
-                     <h3 class="product-wrapper-content"><a href="detailed_product_view.html">Timeless</a></h3>
+                     <h2 class="product-wrapper-content"><a href="detailed_product_view.html">Timeless</a></h2>
+
       <!--                <h2 >CAD 298</h2>
                      <p >Unspoken Elegance</p> -->
             </div>
@@ -176,9 +233,9 @@
                 <img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/ask_question-32.png" title="Ask Question" width="32">
           </div>
 
-          <div class="shopping-bag">
+<!--           <div class="shopping-bag">
                 <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32">
-          </div>
+          </div> -->
       </section>
 
 <!--       <section> -->
@@ -193,8 +250,9 @@
                 </ul>
               </div>
           </div>
-<!-- 
-      </section> -->
+<!-- </section> -->
+
+
   </body>
 
 </html>
