@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name"viewport" content="width=device-width, intitial-scale=1.0">
+
+	  <title>Contact</title>
+
+  	 <link rel="stylesheet" href="css/grids.css" >
+  	 <link rel="stylesheet" href="css/main.css" >
+     <link rel="stylesheet" href="css/normalize.css"> 
+     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <!-- <FIXED HORIZONTAL NAVIGATION > -->
+    <div class="nav">
+            <div class="button-nav grid-col-1of4">
+              <h1 class="logo"><a href="index.html">CHRON</a></h1>
+            </div>
+
+            <div class="button-nav grid-col-3of4">
+
+                <div class="button-nav grid-button" >
+                  <a href="product_list.html">Watches</a>
+                </div> 
+
+                <div class="button-nav grid-button" >
+                  <a href="events.html">Events</a>
+                </div>
+
+                <div class="button-nav grid-button" >
+                  <a href="about_us.html">About</a>
+                </div>
+
+                <div class="button-nav grid-button" >
+                  <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="search"> 
+                    <span onclick="openSearch()"><img src="img/search-icon.png" class="search" title="search"></span>
+                </div>
+
+            </div>
+    </div>
+
+
+      <section> <!-- sidebar -->
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#"><h2>CHRON</h2></a>
+              <a href="#">Watches</a>
+              <a href="#">Events</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+          </div>
+
+    <section>
+
+    <script> 
+                function openNav() { 
+                    document.getElementById("mySidenav").style.width = "220px"; 
+                    // document.getElementById("main").style.marginLeft = "250px"; 
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                } 
+
+                 function closeNav() { 
+                    document.getElementById("mySidenav").style.width = "0"; 
+                    // document.getElementById("main").style.marginLeft= "0"; 
+                    document.body.style.backgroundColor = "white"; 
+                } 
+  </script> 
+
+
+    <div id="mySearch" class="sidesearch">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+        <form action="#" class="input_form"> 
+        <input type="text" name=" 1" Placeholder="New Arrivals" class="input_account"> </form>
+            <p>Quick Links</p>
+<!--             <ul class="quick-links">
+              <li>Find a store</li>
+              <li>Hot Items</li>
+              <li>On Sale</li>
+            </ul> -->
+            <div class="quick-links">
+              <p>Find a store</p>
+              <p>Hot Items</p>
+              <p>On Sale</p>
+            </div>
+    <!--<img src="img/search-icon.png" class="search-pop" title="search"> -->
+    </div>
+      <!-- Use any element to open the sidenav -->
+          <div class="hamburger">
+            <span onclick="openNav()"><img src="img/ham-icon.png" title="hamburger"></span>
+            <p class="small-logo">CHRON</p>
+          </div>
+
+      </section>
+
+
+      <section> 
+          <div id="mySearch" class="sidesearch"> 
+              <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a> 
+              <form action="#" class="input_form">  
+              <input type="text" name=" 1" Placeholder="Timeless Series" class="input_account"> </form> 
+      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
+          </div> 
+       
+            <script> 
+                function openSearch() { 
+                    document.getElementById("mySearch").style.width = "350px"; 
+                    // document.getElementById("main").style.marginLeft = "250px"; 
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                } 
+       
+                function closeSearch() { 
+                    document.getElementById("mySearch").style.width = "0"; 
+                    // document.getElementById("main").style.marginLeft= "0"; 
+                    document.body.style.backgroundColor = "white"; 
+                } 
+            </script> 
+       
+          <div class="search-small">  
+                 <span onclick="openSearch()"><img src="img/search-icon.png" class="search icon" title="search"></span> 
+          </div> 
+       
+      </section> 
+
+      <section> 
+          <div id="myCart" class="sidecart"> 
+              <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a> 
+
+                <div class="cart-small">
+                  <img src="img/watch1.jpg" alt="placeholder image">
+  
+                  <div class="cart_title">
+                       <h3>Product Name</a></h3>
+                       <h2 class="price">Chorn E Series</h2>
+                  </div>
+
+                  <div class="cart_title">
+                      <h3>Quantity</a></h3>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder=" 1"> </form>
+                      <!-- <img src="img/trash-icon.png" class="icon" alt="delete item"> -->
+                  </div>
+
+                  <div class="cart_title">
+                       <h3>Price</h3>
+                       <h2 class="price">299 CAD</h2>
+                  </div>
+                      
+                  <div class="cart_title">
+                       <h3>Free Delivery Fee</h3>
+                  </div>
+      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
+              </div> 
+              <a href="account.html"><button type="button" class="login-button">Check Out</button></a>
+            </div>
+       
+            <script> 
+                function openCart() { 
+                    document.getElementById("myCart").style.width = "300px"; 
+                    // document.getElementById("main").style.marginLeft = "250px"; 
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                } 
+       
+                function closeCart() { 
+                    document.getElementById("myCart").style.width = "0"; 
+                    // document.getElementById("main").style.marginLeft= "0"; 
+                    document.body.style.backgroundColor = "white"; 
+                } 
+            </script> 
+              <!-- online-support icon -->
+
+          <div class="shopping-bag">  
+                 <span onclick="openCart()"><img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" class="icon"></span> 
+          </div> 
+
+          <div class="account-icon">
+                <a href="account.html"><img src="img/account.png" title="Account" class="icon"></a>
+          </div>
+        
+      </section> 
+
+
+    
+
+      <section>
+
+          <div class="grid-row">
+            <div class="grid-col-12of12">
+              <h2 class="big-title">Contact Us</h2>
+            </div>
+          </div>
+
+
+          <div class="grid-row body_move_down">
+
+            <div class="grid-col-1of2 contact-left">
+                     <img src="img/contact-img.jpg" alt="placeholder image">
+                    
+
+      <!--                <h2 >CAD 298</h2>
+                     <p >Unspoken Elegance</p> -->
+            </div>
+
+            <div class="grid-col-1of2 contact-right">
+                      <p>We are here to serve you better. Please leave what you think we could improve. We are apprieciated to hear from you.</p>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="First Name"> </form>
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Last Name"> </form> 
+                      <form action="#" class="input_form"> 
+                      <input type="text" name=" 1" Placeholder="Email/Username"> </form>
+                      <!-- <textarea >We are pleasant to hear from you...</textarea> -->
+                      <button type="button" class="login-button">Submit</button>
+      <!--                <h2 >CAD 298</h2>
+                     <p >Unspoken Elegance</p> -->
+            </div>
+            
+          </div>
+      </section>
+        
+
+          <div class="grid-row">
+            <div class="grid-col-12of12">
+              <h2 class="big-title">Other Ways to Contact</h2>
+            </div>
+          </div>
+
+          <div class="grid-row contact-ways">
+            <div class="grid-col-1of4">
+              <h3>Service Mail</h3>
+              <p>service@chron.ca</p>
+            </div>
+            <div class="grid-col-1of4">
+              <h3>Online Chat</h3>
+              <p>Chat now</p>
+            </div>
+            <div class="grid-col-1of4">
+              <h3>Toll Free</h3>
+              <p>888-888-8888</p>
+            </div>
+            <div class="grid-col-1of4">
+              <h3>Adress</h3>
+              <p>666-6666 Arcola St.</p>
+            </div>
+          </div>
+
+
+          <div class="grid-row">
+            <div class="grid-col-12of12">
+              <img src="img/map.jpg" class="map" alt="location">
+            </div>
+          </div>
+
+<!--       <section> -->
+<!--           <div class="grid-row">
+              <div class="grid-col-12of12">
+                <ul >
+                    <li>HELP</li>
+                    <li>RETURNS</li>
+                    <li>SHIPPING</li>
+                    <li>CONTACT</li>
+                    <li>STORE FINDER</li>
+                </ul>
+              </div>
+          </div>
+<!-- </section> - -->->
+
+
+  </body>
+
+</html>

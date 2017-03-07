@@ -33,11 +33,11 @@
                 </div>
 
                 <div class="button-nav grid-button" >
-                  <a href="about_us.html">About us</a>
+                  <a href="about_us.html">About</a>
                 </div>
 
                 <div class="button-nav grid-button" >
-                  <a href="account.html">Account</a>
+                  <a href="contact.html">Contact</a>
                 </div>
 
                 <div class="search"> 
@@ -54,8 +54,8 @@
               <a href="#"><h2>CHRON</h2></a>
               <a href="#">Watches</a>
               <a href="#">Events</a>
-              <a href="#">About Us</a>
-              <a href="#">Account</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
           </div>
 
     <section>
@@ -78,13 +78,18 @@
     <div id="mySearch" class="sidesearch">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
         <form action="#" class="input_form"> 
-        <input type="text" name=" 1" Placeholder="What do you want?" class="input_account"> </form>
+        <input type="text" name=" 1" Placeholder="New Arrivals" class="input_account"> </form>
             <p>Quick Links</p>
-            <ul class="quick-links">
+<!--             <ul class="quick-links">
               <li>Find a store</li>
               <li>Hot Items</li>
               <li>On Sale</li>
-            </ul>
+            </ul> -->
+            <div class="quick-links">
+              <p>Find a store</p>
+              <p>Hot Items</p>
+              <p>On Sale</p>
+            </div>
     <!--<img src="img/search-icon.png" class="search-pop" title="search"> -->
     </div>
       <!-- Use any element to open the sidenav -->
@@ -106,7 +111,7 @@
        
             <script> 
                 function openSearch() { 
-                    document.getElementById("mySearch").style.width = "380px"; 
+                    document.getElementById("mySearch").style.width = "350px"; 
                     // document.getElementById("main").style.marginLeft = "250px"; 
                     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
                 } 
@@ -140,22 +145,25 @@
                       <h3>Quantity</a></h3>
                       <form action="#" class="input_form"> 
                       <input type="text" name=" 1" Placeholder=" 1"> </form>
+                      <!-- <img src="img/trash-icon.png" class="icon" alt="delete item"> -->
                   </div>
 
                   <div class="cart_title">
                        <h3>Price</h3>
                        <h2 class="price">299 CAD</h2>
                   </div>
-
-                  <button type="button" class="login-button">Check Out</button>
                       
+                  <div class="cart_title">
+                       <h3>Free Delivery Fee</h3>
+                  </div>
       <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
               </div> 
+              <a href="account.html"><button type="button" class="login-button">Check Out</button></a>
             </div>
        
             <script> 
                 function openCart() { 
-                    document.getElementById("myCart").style.width = "280px"; 
+                    document.getElementById("myCart").style.width = "300px"; 
                     // document.getElementById("main").style.marginLeft = "250px"; 
                     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
                 } 
@@ -171,6 +179,10 @@
                  <span onclick="openCart()"><img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32"></span> 
           </div> 
        
+
+          <div class="account-icon">
+                <a href="account.html"><img src="img/account.png" title="Account" class="icon"></a>
+          </div>
       </section> 
 
 
@@ -178,7 +190,9 @@
       <section id="main"> <!-- content of index page -->
           <!-- context (picture, button and text) on the main page  -->
             
-          <div class="content-wrapper">
+          <div class="body_move_down">
+          <div class="grid-row grid-col-12of12">
+          <div class="left">
 
                   <div classs="full-img">
                     <img src="img/p10.jpg" title="cool guy with watch">
@@ -187,32 +201,31 @@
                   <div class="content-text">
                     <h1 id="slogan">You may delay but time will not.</h1>
                   </div>
-
           </div>
       </section>
     
       <section>
 
-          <div class="grid-row content-wrapper">
-
+          
+         
             <div class="product-wrapper grid-col-1of3 homepage-small">
                      <img src="img/homepage_small1.jpg" alt="placeholder image">
-                     <h2 class="product-wrapper-content"><a href="detailed_product_view.html">Timeless</a></h2>
+                     <h2 class="product-wrapper-content"><a href="product_list.html">Products</a></h2>
 
       <!--                <h2 >CAD 298</h2>
                      <p >Unspoken Elegance</p> -->
             </div>
 
             <div class="product-wrapper grid-col-1of3 homepage-small">
-                     <img src="img/homepage_small1.jpg" alt="placeholder image">
-                     <h3 class="product-wrapper-content"><a href="detailed_product_view.html">Timeless</a></h3>
+                     <img src="img/us.jpg" alt="placeholder image">
+                     <h3 class="product-wrapper-content"><a href="events.html">Events</a></h3>
       <!--                <h2 >CAD 298</h2>
                      <p >Unspoken Elegance</p> -->
             </div>
             
             <div class="product-wrapper grid-col-1of3 homepage-small">
-                     <img src="img/homepage_small1.jpg" alt="placeholder image">
-                     <h3 class="product-wrapper-content"><a href="detailed_product_view.html">Timeless</a></h3>
+                     <img src="img/p87.jpg" alt="placeholder image">
+                     <h3 class="product-wrapper-content"><a href="about_us.html">Our story</a></h3>
       <!--                <h2 >CAD 298</h2>
                      <p >Unspoken Elegance</p> -->
             </div>
@@ -222,33 +235,94 @@
             <div class="grid-col-1of3 homepage-small">
               <img src="img/homepage_small1.jpg" title="watches">
             </div> -->
+            </div>
 
           </div>
       </section>
         
     <!-- online-support and shopping bag icon -->
 
-      <section>
-          <div class="online-support">
-                <img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/ask_question-32.png" title="Ask Question" width="32">
-          </div>
 
+<!--       <section> -->
 <!--           <div class="shopping-bag">
                 <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32">
           </div> -->
       </section>
 
-<!--       <section> -->
-          <div class="grid-row">
+<!--       <section> -->  
+<!--           <div class="grid-row">
               <div class="grid-col-12of12">
-                <ul>
-                    <li>FQA</li>
+                <ul >
+                    <li>HELP</li>
                     <li>RETURNS</li>
                     <li>SHIPPING</li>
                     <li>CONTACT</li>
                     <li>STORE FINDER</li>
-                </ul>
+                </ul> -->
+          <div class="grid-col-12of12 gery-bg">
+         
+                   <ul class="footer-ul">
+                      <li class="footer-component"><a href = "#">FQA</a></li>
+                      <li class="footer-component"><a href = "#">RETURNS</a></li>
+                      <li class="footer-component"><a href = "#">SHIPPING</a></li>
+                      <li class="footer-component"><a href = "#">CONTACT</a></li>
+                      <li class="footer-component"><a href = "#">STORE FINDER</a></li>
+                   </ul>
               </div>
+            </div>  
+
+
+               <!--  <div class="grid-row">
+           <div class="grid-col-12of12 gery-bg">
+
+          <ul>
+              <li class="icon">
+                <img src="img/FacebookFilled.png" title="facebook-icon">
+                <img src="img/InstagramFilled.png" title="instagram-icon">
+                <img src="img/SnapchatFilled.png" title="snapchat-icon">
+                <img src="img/PinterestFilled.png" title="pinterest-icon">
+              </li>
+            </ul>
+        </div>
+        </div> -->
+          
+
+          <div class="grid-row">
+           <div class="grid-col-12of12 gery-bg">
+              <div class= "footer-icons">
+
+              <div class="icon">
+                <img src="img/FacebookFilled.png" title="facebook-icon">
+              </div>
+
+              <div class="icon">
+                <img src="img/InstagramFilled.png" title="instagram-icon">
+              </div>
+
+              <div class="icon">
+                <img src="img/SnapchatFilled.png" title="snapchat-icon">
+              </div>
+
+              <div class="icon">
+                <img src="img/PinterestFilled.png" title="pinterest-icon">
+              </div>
+
+              </div>
+            </div>
+
+            <div class="grid-col-12of12 gery-bg">       
+                   <ul class="footer-ul">
+                      <li class="footer-reference"><a href="#">STYLE SHEET</a></li>
+                      <li class="footer-reference">|</li>
+                      <li class="footer-reference"><a href="#">CITATIONS</a></li>
+                      <li class="footer-reference">|</li>
+                      <li class="footer-reference"><a href="#">SITE MAP</a></li>
+                      <li class="footer-reference">|</li>
+                      <li class="footer-reference"><a href="#">REPOSITORY</a></li>
+                   </ul>
+              </div>
+            </div>
+
           </div>
 <!-- </section> -->
 
