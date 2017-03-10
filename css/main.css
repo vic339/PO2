@@ -16,7 +16,7 @@ body{
 }*/
 
 div .grid-col-5of12 img{
-  /*
+  /*ß
   min-height:100%;
   min-width:100%;
   */
@@ -73,14 +73,10 @@ a{
   color:#E8E8E8;
 }
 
-.footer-component a{
-  color:black;
+.grey-bg{
+  padding: 2rem;
+  background-color: rgb(245,245,245);
 }
-
-.footer-component a:hover{
-  color:grey;
-}
-
 
 .logo{
   font-style: bold;
@@ -92,19 +88,12 @@ a{
 	float:right;
 }
 
-
 .search-small{
   width: 20px;
   right:10px;
   top:15px;
   position: fixed;
 }
-
-/*li{
-	list-style:none;
-	margin-left:15px; 
-	margin-top:15px;
-}*/
 
 .content{
 	margin: 1em;
@@ -120,68 +109,6 @@ a{
 	display: block;
   float: left;
 }
-
-/*.product-item{
-    margin-bottom: 2em;
-    z-index:-1;
-    text-align: center;
-    margin-left: 1em;
-}
-
-.product-item:hover, .product-item:focus{
-    background-color: #E8E8E8;
-}*/
-
-/*.product-wrapper{
-    position: relative;
-
-}*/
-
-/*.product-wrapper img{
-  display: block;
-  opacity: 1;
-  transition: all 1s ease;
-  width:100%;
-  padding:10px;
-  box-shadow: 0 8px 18px 1px rgba(0,0,0,0.15);
-}
-
-.product-wrapper:hover img{
-  opacity: 0.2;
-  transform: scale(0.9); 
-  box-shadow:none;
-}
-
-.product-wrapper .product-wrapper-content{
-    position: relative;
-    opacity: 0;
-    width: 100%
-    top: -180px;
-    left:-5px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    transition: all 1s ease;
-    font-size: 25px;
-    text-transform: none;
-}
-
-.product-wrapper:hover .product-wrapper-content {
-    opacity: 0.8;
-    font-weight: bold;
-    border:;
-}
-
-.product-wrapper-content a {
-  text-decoration:none;
-  color:black;
-}*/
-
-
-
-/*.events{
-    margin: 1em;
-}*/
 
 img{
   display: block;
@@ -224,6 +151,7 @@ img{
   padding: 1em 1em 0.5em 1em;
   text-align: center;
   border-bottom:1px solid rgba(0,0,0,0.1);
+  letter-spacing: 2px;
 }
 /*.content-wrapper{
   width:85%;
@@ -246,7 +174,6 @@ img{
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: all 0.5s ease;
-  color: rgba(250,250,250);
 /*  border:1px solid red;*/
   list-style-type: none;
 
@@ -275,24 +202,25 @@ img{
 	width:100%;
   top: 0;
   position: fixed;
-  background-color: rgb(250,250,250);
+  background-color: rgb(245,245,245);
   border-bottom: 1px solid rgba(0,0,0,0.2);
   z-index: 5;
 }
 
 button{
   padding: 0.5em 5em 0.5em 5em;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   border: 1px solid rgb(0,0,0);
   font-size: 13px;
-  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.5s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 button:hover{
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.6);
   color:white;
 }
 
@@ -363,7 +291,7 @@ figcaption{
 }
 
 .gery-bg{
-  background-color: rgb(233,233,233);
+  background-color: rgb(245,245,245);
   width:100%;
 }
 
@@ -411,11 +339,11 @@ section{
 }
 
 .content-text{
-  width:80%;
+  width:75%;
   height:auto;
   position:absolute;
-  top:25%;
-  left:15%;
+  top:26%;
+  left:18%;
   text-align: center;
 }
 
@@ -440,13 +368,16 @@ section{
 .content-text button{
   text-align: center;
   text-transform: uppercase;
-  padding: 1em 4em;
+  padding: 1em 5em;
   margin-top: 1.5em;
   margin-right: 8em;
   letter-spacing: 2px;
+  background-color: white;
+  color: black;
 }
 
 .content-text button:hover{
+  color:white;
   background-color: rgba(0,0,0,0.1);
   border: 1px solid white;
 }
@@ -458,7 +389,7 @@ section{
   position:absolute;
   top:50%;
   left:68%;
-  z-index: 9999999;
+  z-index: 1;
 }
 
 .content-button{
@@ -482,6 +413,10 @@ section{
   margin-left: 1em;
 }
 */
+
+.our-story-homepage{
+  padding: 1.2em 2em;
+}
 
 .image-holder{
   width:100%;
@@ -518,25 +453,27 @@ section{
 }
 
 .input_account{
-  width:60%;
+  width:95%;
 }
 
 .login-box{
   text-align: center;
   margin: 0.5em;
-  padding: 2em 0em ;
+  padding: 2em 5em ;
   }
 
 .signup-button{
-  margin: 2em;
+  margin: 1em;
   font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .login-button{
-  margin: 2em;
+  margin: 1em;
   font-size: 15px;
-  border: 2px solid #E2ECF8;
-
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .payment-box{
@@ -550,20 +487,22 @@ section{
 }
 
 .select_form{
-  position: relative;
+    color: rgb(180,180,180);
     font-size: 0.8em;
     text-align: left;
     margin: 2em 1em 1em 1em;
     height: 3.5em;
-    width: 16em;
-    border: 2px solid #E2ECF8;
-    border-radius: 0.3em;
+    width: 17em;
+    border: 1px solid black;
     transition: all 1s ease;
     text-align: left;
-    display: block;
     background-color: white;
+    border-radius: 0;
 }
 
+.select_form:hover{
+  color:black;
+}
 .footer{
   background-color:black;
 /*  background-color:rgb(233,233,233);*/
@@ -577,7 +516,18 @@ section{
     padding:3em;
 }
 
+.product-list-item{
+  padding: 2em;
+  margin-bottom: 1em;
+}
+.product-list-item h1{
+  color: white;
+}
 
+.hidden-product-info{
+  text-align: center;
+  padding: 1em;
+}
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -618,6 +568,11 @@ section{
     margin-left: 50px;
 }
 
+.side-nav-small{
+  text-align: center;
+  padding: 4em;
+  margin-top: 2em;
+}
 .leftmargin{
   margin-left: 4em;
 }
@@ -642,7 +597,8 @@ section{
     left: 3em;
     font-size: 15px;
     font-weight: bold;
-    z-index: 999;
+    z-index: 5;
+    letter-spacing: 2px;
 }
 
 /* The Search icon links */
@@ -682,6 +638,11 @@ h3#sideSearch-info{
   margin-left:0.9rem;
 }
 
+.search-button{
+  margin-left: 0.8em;
+  width: 95%;
+  text-transform: uppercase;
+}
 
 
 /* When you mouse over the navigation links, change their color */
@@ -725,7 +686,6 @@ h3#sideSearch-info{
 }
 
 .sidecart a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
     color: #818181;
@@ -755,26 +715,34 @@ h3#sideSearch-info{
     .sidecart a {font-size: 18px;}
 }
 
+.sidecart a{
+  display: block;
+}
 .cart-small{
-  padding:1em 2.5em;
+  padding: 0em 2.5em;
   margin-top: 1em;
   text-align: center；
 }
 
 .cart-small img{
-  width: 30%;
+  width: 40%;
   padding-bottom: 1em;
 }
 
 .cart_title{
-  padding: 0.5em 2em;
+  text-align: center;
+  padding: 1em 2em;
   border-bottom: solid 1px rgba(0,0,0,0.1);
 }
 
-/*.cart_title h2{
-  padding: 0.5em;
-  font-size: 15px;
-}*/
+#price{
+  border: none;
+}
+
+#cart-check-out{
+  color: blue;
+  margin-top: 1rem;
+}
 
 .cart_title h3{
   margin:0;
@@ -782,14 +750,13 @@ h3#sideSearch-info{
 
 .sidecart button{
   width: 100%;
-
+  text-transform: uppercase;
 }
 
 .homepage-small{
   margin: 10px;
   float: left;
   display:block;
-  padding-top: 2rem;
   /*  margin-left: auto;
   margin-right: auto;*/
 }
@@ -818,13 +785,12 @@ textarea{
 
 .center-container{
 /*  border:1px solid red;*/
-  width:55%;
+  width:52%;
   margin:0 auto;
+  height: auto;
 }
 
 .center-container:after{
-
-
     content: "";
     clear: both;
     display: table;
@@ -846,9 +812,6 @@ textarea{
   float:left;
 }
 
-
-
-
 .quick-links{
   background-color: white;
   float: left;
@@ -856,10 +819,6 @@ textarea{
 
 .quick-links p{
   font-size: 15px;
-}
-
-.sidesearch p{
-  padding-left: 15px;
 }
 
 .cart-button{
@@ -937,21 +896,34 @@ div.tab a:focus, .active{
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  z-index: -1;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: .6s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
+}
+
+.middle h1{
+  color:white;
+  text-align: center;
+}
+
+.middle h2{
+  color:white;
+  text-align: center;
 }
 
 .container:hover .image {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(1.01);
+  filter: brightness(.1);
+  -webkit-filter: brightness(.1);
 }
 
 .container:hover .middle {
@@ -959,15 +931,17 @@ div.tab a:focus, .active{
 }
 
 .text {
-  color: white;
+  color: black;
   font-size: 1em;
   text-transform: uppercase;
+  z-index: -1;
 }
 
 #homepage-category{
-   border: 1px solid red;
+   /*border: 1px solid red;*/
 }
-#homepage-category:after{
+
+#homepage-category:after{ß
  content:"";
   clear:both;
   display:table;
@@ -976,7 +950,7 @@ div.tab a:focus, .active{
 
 
 #email{
-  border: 5px solid red;
+/*  border: 5px solid red;*/
   margin-top: 2em;
   padding: 2rem;
   height:30rem;

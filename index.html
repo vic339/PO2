@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	  <title>Homepage</title>
+	  <title>Chron</title>
 
   	 <link rel="stylesheet" href="css/grids.css" >
   	 <link rel="stylesheet" href="css/main.css" >
@@ -58,12 +58,14 @@
       <section> <!-- sidenave will replace the nav when using smaller screen-->
           <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#"><h2>CHRON</h2></a>
-              <a href="product_list.html">Watches</a>
-              <a href="events.html">Events</a>
-              <a href="about_us.html">About</a> 
-              <a href="about_us.html">Account</a> 
-              <a href="#"><span onclick="openSearch()">Shopping Cart</span></a>
+              <div class="side-nav-small">
+                <a href="index.html"><h2>CHRON</h2></a>
+                <a href="product_list.html">Watches</a>
+                <a href="events.html">Events</a>
+                <a href="about_us.html">About</a> 
+                <a href="login.html">Account</a> 
+                <a href="#"><span onclick="openCart()">Shopping Cart</span></a>
+            </div>
           </div>
 
     </section>
@@ -91,18 +93,17 @@
               <form action="#" class="input_form"> 
               <h3 id="sideSearch-info">Enter Your Search Below</h3>
               <input type="text" name=" 1" Placeholder="New Arrivals" class="input_account"> </form>
+              <button type="button" class="search-button">Search</button>
           </div>
     <!--<img src="img/search-icon.png" class="search-pop" title="search"> -->
     </div>
 
     <script> 
                 function openSearch() { 
-                    document.getElementById("mySearch").style.width = "50%";   
+                    document.getElementById("mySearch").style.width = "100%";   
 
                     // document.getElementById("main").style.marginLeft = "250px"; 
                     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
-
-
                 } 
        
                 function closeSearch() { 
@@ -117,7 +118,7 @@
       <!-- Use any element to open the sidenav -->
           <div class="hamburger">
             <span onclick="openNav()"><img src="img/burger.png" title="hamburger"></span>
-            <p class="small-logo">CHRON</p>
+            <a href="index.html"><p class="small-logo">CHRON</p></a>
           </div>
        
       <!--  icons with small screen size -->
@@ -125,36 +126,40 @@
                  <span onclick="openSearch()"><img src="img/search.png" class="search" title="search"></span> 
           </div> 
 
+      <!-- side bar shopping cart -->
       <section> 
           <div id="myCart" class="sidecart"> 
               <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a> 
-                  <div class="cart-small">
-                      <img src="img/watch1.jpg"  alt="placeholder image">
-                  </div>
-                  <div class="cart_title">
-                       <h3>Product Name</a></h3>
-                       <h2 class="price">Chorn E Series</h2>
-                  </div>
+              <h3 class="big-title">Shopping Cart (1)</h3>
+              <div id="sideSearch-container">
+                    <div class="cart-small">
+                          <img src="img/watch1.jpg"  alt="placeholder image">
+                    </div>
+                    <div class="cart_title">
+                         <h3>Product Name</a></h3>
+                         <h2 class="price">Chorn E Series</h2>
+                    </div>
 
-                  <div class="cart_title">
-                      <h3>Quantity</a></h3>
-                      <form action="#" class="input_form"> 
-                      <input type="text" name=" 1" Placeholder="1"> </form>
-                      <!-- <img src="img/trash-icon.png" class="icon" alt="delete item"> -->
-                  </div>
+                    <div class="cart_title">
+                        <h3>Quantity</a></h3>
+                        <form action="#" class="input_form"> 
+                        <input type="text" name=" 1" Placeholder="1"> </form>
+                        <!-- <img src="img/trash.png" class="icon" alt="delete item"> -->
+                    </div>
 
-                  <div class="cart_title">
-                       <h3>Total Price</h3>
-                       <h2 class="price">299 CAD</h2>
-                  </div>
-      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
-                  <div> 
-                      <a href="account.html"><button type="button" class="">Check Out</button></a>
-                  </div>
+                    <div class="cart_title" id="price">
+                         <h3>Total Price</h3>
+                         <h2 class="price">299 CAD</h2>
+                    </div>
+                    <div id="cart-check-out"> 
+                        <a href="account.html"><button type="button" class="">Check Out</button></a>
+                    </div>
+                </div>
+          </div>
        
             <script> 
                 function openCart() { 
-                    document.getElementById("myCart").style.width = "50%"; 
+                    document.getElementById("myCart").style.width = "100%"; 
                     // document.getElementById("main").style.marginLeft = "250px"; 
                     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
                 } 
@@ -165,28 +170,79 @@
                     document.body.style.backgroundColor = "white"; 
                 } 
             </script> 
-
       </section> 
 
-      <section> <!-- id="main" content of index page -->
-          <!-- context (picture, button and text) on the main page  -->
+      <!-- context (picture, button and text) on the main page  -->
+      <section> 
               <div class="grid-row grid-col-12of12">
                        <div class="image-holder">
-                            <img src="img/p10.jpg" title="cool guy with watch">
+                            <img src="img/small_screen_banner.jpg" title="cool guy with watch">
                             <video playsinline autoplay muted loop poster="watch.jpg" id="bgvid">
                              <source src="video/watch.mp4" type="video/mp4">
                              </video> 
+
                           <div class="content-text">
                             <h1>You may delay but time will not</h1>
                             <h2>Experience the delightful moment with Chron watches</h2>
                             <a href="product_list.html"><button type="button" class="">Explore Now</button></a>
                           </div>
+
                       </div>
                 </div>      
       </section>
-    
+
+
+    <div class="grid-row">
+            <div class="grid-col-12of12">
+              <h2 class="big-title">Our Story</h2>
+            </div>
+    </div>
+
+    <div class="grid-row">
+            <div class="grid-col-1of2">
+              <img src="img/motion.gif">
+            </div>
+
+            <div class="grid-col-1of2 our-story-homepage">
+              <h2>Chron</h2>
+              <p>A chronozone or chron is a slice of time that begins at a given identifiable event and ends at another. </p>
+            </div>
+    </div>
+
+    <div class="grid-row">
+            <div class="grid-col-12of12">
+              <h2 class="big-title">Design philosophy</h2>
+            </div>
+    </div>
+
+    <div class="grid-row">
+            <div class="grid-col-12of12">
+              <p>Chron is a series of watch with an unique dial which rotates around its own axis. It is build with high quality and is permanently in motion. </p>
+            </div>
+    </div>
+
+    <div class="grid-row">
+            <div class="grid-col-1of2">
+              <img src="img/design1.jpg">
+            </div>
+
+            <div class="grid-col-1of2">
+              <img src="img/design2.jpg">
+            </div>
+
+<!--             <div class="grid-col-1of3">
+              <img src="img/design3.jpg">
+            </div> -->
+    </div>
+
+    <div class="grid-row">
+            <div class="grid-col-12of12">
+              <h2 class="big-title">Events</h2>
+            </div>
+    </div>
 
       <section>
+
          <div class="gird-row" id="homepage-category">
             <div class="grid-col-1of3 homepage-small container">
                      <img src="img/homepage_small1.jpg" class="image" alt="placeholder image">
@@ -204,7 +260,7 @@
                      </div>
              </div>
         
-             <div class="grid-col-1of3 homepage-small container">
+             <div class="grid-col-1of3 homepage-small container"ß>
                      <a href="events.html"><img src="img/p87.jpg" class="image" alt="placeholder image"></a>
                      <div class="middle"> 
                        <div class="text">Our Story
@@ -215,10 +271,16 @@
 
       </section>
 
+    <div class="grid-row">
+            <div class="grid-col-12of12">
+              <h2 class="big-title">Stay Noticed</h2>
+            </div>
+    </div>
+
       <section>
             <div class="gird-row" id="email">
                   <div class="grid-col-1of2">
-                        <p>Sign up for our newsletter to get the latest news, announcements, special offers and event information.</p>
+                        <p>Sign up for our newsletter to get the latest news, announcements, and event information.</p>
                   </div>
 
             <div class="grid-col-1of2">
@@ -229,17 +291,11 @@
 
       </section>
         
-    <!-- online-support and shopping bag icon -->
 
-
-<!--       <section> -->
-<!--           <div class="shopping-bag">
-                <img src="https://maxcdn.icons8.com/iOS7/PNG/32/Ecommerce/shopping_bag-32.png" title="Shopping Bag" width="32">
-          </div> -->
-      </section>
-
+<!-- Footer Content-->      
+      <section>
         <div class="grid-row">
-            <div class="grid-col-12of12 gery-bg">
+            <div class="grid-col-12of12 grey-bg">
                    <ul class="footer-ul">
                       <li class="footer-component"><a href = "#">FQA</a></li>
                       <li class="footer-component"><a href = "#">RETURNS</a></li>
@@ -251,7 +307,7 @@
           </div>  
 
           <div class="grid-row">
-               <div class="grid-col-12of12 gery-bg">
+               <div class="grid-col-12of12 grey-bg">
                   <div class= "footer-icons">
                       <div class="center-container">
                           <div class="icon">
@@ -275,9 +331,9 @@
             </div>
 
             <div class="grid-row">
-                <div class="grid-col-12of12 gery-bg">       
+                <div class="grid-col-12of12 grey-bg">       
                        <ul class="footer-ul">
-                          <li class="footer-reference"><a href="#">STYLE SHEET</a></li>
+                          <li class="footer-reference"><a href="#">STYLE GUIDE</a></li>
                           <li class="footer-reference">|</li>
                           <li class="footer-reference"><a href="#">CITATIONS</a></li>
                           <li class="footer-reference">|</li>
@@ -288,8 +344,7 @@
                   </div>
             </div>
 
-          </div>
-<!-- </section> -->
+          </section>
 
 
   </body>

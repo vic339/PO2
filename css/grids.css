@@ -152,6 +152,11 @@
 
 
 @media only screen and (min-width: 48em) {
+
+	.hidden-product-info{
+		display: none;
+	}
+
      .image-holder img{
     	display:none;
     }
@@ -224,12 +229,18 @@
 
 
 @media only screen and (max-width: 30em) {
-   
-
+    
 	.nav{
 		display: none;
 		
 	}
+	.hidden-content{
+		display: none;
+	}
+	.text{
+		display: none;
+	}
+
 	.content-text{
 		display: none;
 	}
@@ -285,7 +296,6 @@
 	.grid-col-12of12{
 		width:48%;
 	}
-	
 
 }
 
@@ -295,12 +305,15 @@
 		display: none;
 	}
 
-
-	.content-text{
+	.text{
 		display: none;
 	}
 
 	.content-text-list{
+		display: none;
+	}
+
+	.content-text{
 		display: none;
 	}
 
@@ -314,6 +327,10 @@
 	.shopping-bag{
 		display: none;
 	}*/
+
+	.hidden-product-info{
+		visibility: visible;
+	}
 
 
 	.grid-col-1of12 {

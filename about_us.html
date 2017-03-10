@@ -58,12 +58,14 @@
       <section> <!-- sidenave will replace the nav when using smaller screen-->
           <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#"><h2>CHRON</h2></a>
-              <a href="product_list.html">Watches</a>
-              <a href="events.html">Events</a>
-              <a href="about_us.html">About</a> 
-              <a href="about_us.html">Account</a> 
-              <a href="#"><span onclick="openSearch()">Shopping Cart</span></a>
+              <div class="side-nav-small">
+                <a href="index.html"><h2>CHRON</h2></a>
+                <a href="product_list.html">Watches</a>
+                <a href="events.html">Events</a>
+                <a href="about_us.html">About</a> 
+                <a href="login.html">Account</a> 
+                <a href="#"><span onclick="openCart()">Shopping Cart</span></a>
+            </div>
           </div>
 
     </section>
@@ -91,18 +93,17 @@
               <form action="#" class="input_form"> 
               <h3 id="sideSearch-info">Enter Your Search Below</h3>
               <input type="text" name=" 1" Placeholder="New Arrivals" class="input_account"> </form>
+              <button type="button" class="search-button">Search</button>
           </div>
     <!--<img src="img/search-icon.png" class="search-pop" title="search"> -->
     </div>
 
     <script> 
                 function openSearch() { 
-                    document.getElementById("mySearch").style.width = "50%";   
+                    document.getElementById("mySearch").style.width = "100%";   
 
                     // document.getElementById("main").style.marginLeft = "250px"; 
                     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
-
-
                 } 
        
                 function closeSearch() { 
@@ -117,7 +118,7 @@
       <!-- Use any element to open the sidenav -->
           <div class="hamburger">
             <span onclick="openNav()"><img src="img/burger.png" title="hamburger"></span>
-            <p class="small-logo">CHRON</p>
+            <a href="index.html"><p class="small-logo">CHRON</p></a>
           </div>
        
       <!--  icons with small screen size -->
@@ -125,36 +126,40 @@
                  <span onclick="openSearch()"><img src="img/search.png" class="search" title="search"></span> 
           </div> 
 
+      <!-- side bar shopping cart -->
       <section> 
           <div id="myCart" class="sidecart"> 
               <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a> 
-                  <div class="cart-small">
-                      <img src="img/watch1.jpg"  alt="placeholder image">
-                  </div>
-                  <div class="cart_title">
-                       <h3>Product Name</a></h3>
-                       <h2 class="price">Chorn E Series</h2>
-                  </div>
+              <h3 class="big-title">Shopping Cart (1)</h3>
+              <div id="sideSearch-container">
+                    <div class="cart-small">
+                          <img src="img/watch1.jpg"  alt="placeholder image">
+                    </div>
+                    <div class="cart_title">
+                         <h3>Product Name</a></h3>
+                         <h2 class="price">Chorn E Series</h2>
+                    </div>
 
-                  <div class="cart_title">
-                      <h3>Quantity</a></h3>
-                      <form action="#" class="input_form"> 
-                      <input type="text" name=" 1" Placeholder="1"> </form>
-                      <!-- <img src="img/trash-icon.png" class="icon" alt="delete item"> -->
-                  </div>
+                    <div class="cart_title">
+                        <h3>Quantity</a></h3>
+                        <form action="#" class="input_form"> 
+                        <input type="text" name=" 1" Placeholder="1"> </form>
+                        <!-- <img src="img/trash.png" class="icon" alt="delete item"> -->
+                    </div>
 
-                  <div class="cart_title">
-                       <h3>Total Price</h3>
-                       <h2 class="price">299 CAD</h2>
-                  </div>
-      <!--         <img src="img/search-icon.png" class="search-pop" title="search"> --> 
-                  <div> 
-                      <a href="account.html"><button type="button" class="">Check Out</button></a>
-                  </div>
+                    <div class="cart_title" id="price">
+                         <h3>Total Price</h3>
+                         <h2 class="price">299 CAD</h2>
+                    </div>
+                    <div id="cart-check-out"> 
+                        <a href="account.html"><button type="button" class="">Check Out</button></a>
+                    </div>
+                </div>
+          </div>
        
             <script> 
                 function openCart() { 
-                    document.getElementById("myCart").style.width = "50%"; 
+                    document.getElementById("myCart").style.width = "100%"; 
                     // document.getElementById("main").style.marginLeft = "250px"; 
                     document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
                 } 
@@ -165,7 +170,6 @@
                     document.body.style.backgroundColor = "white"; 
                 } 
             </script> 
-
       </section> 
 
        <div class="grid-row">
@@ -194,7 +198,59 @@
 
         </div>
 
+<!-- Footer Content-->      
+      <section>
+        <div class="grid-row">
+            <div class="grid-col-12of12 grey-bg">
+                   <ul class="footer-ul">
+                      <li class="footer-component"><a href = "#">FQA</a></li>
+                      <li class="footer-component"><a href = "#">RETURNS</a></li>
+                      <li class="footer-component"><a href = "#">SHIPPING</a></li>
+                      <li class="footer-component"><a href = "#">CONTACT</a></li>
+                      <li class="footer-component"><a href = "#">STORE FINDER</a></li>
+                   </ul>
+              </div>
+          </div>  
 
+          <div class="grid-row">
+               <div class="grid-col-12of12 grey-bg">
+                  <div class= "footer-icons">
+                      <div class="center-container">
+                          <div class="icon">
+                            <img src="img/FacebookFilled.png" title="facebook-icon">
+                          </div>
+
+                          <div class="icon">
+                            <img src="img/InstagramFilled.png" title="instagram-icon">
+                          </div>
+
+                          <div class="icon">
+                            <img src="img/SnapchatFilled.png" title="snapchat-icon">
+                          </div>
+
+                          <div class="icon">
+                            <img src="img/PinterestFilled.png" title="pinterest-icon">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="grid-row">
+                <div class="grid-col-12of12 grey-bg">       
+                       <ul class="footer-ul">
+                          <li class="footer-reference"><a href="#">STYLE GUIDE</a></li>
+                          <li class="footer-reference">|</li>
+                          <li class="footer-reference"><a href="#">CITATIONS</a></li>
+                          <li class="footer-reference">|</li>
+                          <li class="footer-reference"><a href="#">SITE MAP</a></li>
+                          <li class="footer-reference">|</li>
+                          <li class="footer-reference"><a href="#">REPOSITORY</a></li>
+                       </ul>
+                  </div>
+            </div>
+
+          </section>
 
     </body>
 </html>
