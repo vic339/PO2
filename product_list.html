@@ -2,30 +2,32 @@
 <html lang="en">
 
   <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Watches</title>
 
-    <title>Product List</title>
-
-     <link rel="stylesheet" href="css/grids.css" >
-     <link rel="stylesheet" href="css/main.css" >
-     <link rel="stylesheet" href="css/normalize.css"> 
-     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="css/grids.css" >
+        <link rel="stylesheet" href="css/main.css" >
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
   </head>
 
   <body>
-      <!-- <FIXED HORIZONTAL NAVIGATION > -->
+    <!-- <FIXED HORIZONTAL NAVIGATION > -->
     <div class="nav">
+
                 <div class="button-nav grid-col-1of6">
-                  <h1 class="logo"><a href="index.html">CHRON</a></h1>
+                      <h1 class="logo"><a href="index.html">CHRON</a></h1>
                 </div>
 
                 <div class="button-nav grid-col-7of12">
+
                       <div class="button-nav grid-button" >
                         <a href="product_list.html">Watches</a>
                       </div> 
+
                       <div class="button-nav grid-button" >
                         <a href="events.html">Events</a>
                       </div>
@@ -39,306 +41,303 @@
                       </div>
                  </div>
 
-                  <div class="button-nav grid-col-1of6 icon-on-nav ">
+                 <div class="button-nav grid-col-1of6 icon-on-nav ">
+
                             <div class="shopping-bag">  
-                                <span onclick="openCart()"><img src="img/cart.png" title="Shopping Bag" class="icon"></span> 
+                                <span onclick="openCart()"><img src="img/cart.png" alt="cart-icon" title="Shopping Bag" class="icon"></span> 
                             </div> 
 
                             <div class="account-icon">
-                                  <a id="none-a" href="account.html"><img src="img/account.png" title="Account" class="icon"></a>
+                                  <a id="none-a" href="login.html"><img src="img/account.png" alt="account-icon" title="Account" class="icon"></a>
                             </div> 
 
                             <div class="search"> 
-                                  <span onclick="openSearch()"><img src="img/search.png" class="icon" title="search"></span>
+                                  <span onclick="openSearch()"><img src="img/search.png" alt="search-icon" class="icon" title="search"></span>
                             </div>
-                   </div>
-            </div>
+                  </div>
+       </div>
+       <!-- <End o FIXED HORIZONTAL NAVIGATION > -->
 
 
       <section> <!-- sidenave will replace the nav when using smaller screen-->
           <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <div class="side-nav-small">
-                <a href="index.html"><h2>CHRON</h2></a>
-                <a href="product_list.html">Watches</a>
-                <a href="events.html">Events</a>
-                <a href="about_us.html">About</a> 
-                <a href="login.html">Account</a> 
-                <a href="#"><span onclick="openCart()">Shopping Cart</span></a>
-            </div>
+                    <a href="index.html"><h2>CHRON</h2></a>
+                    <a href="product_list.html">Watches</a>
+                    <a href="events.html">Events</a>
+                    <a href="about_us.html">About</a> 
+                    <a href="login.html">Account</a> 
+                    <a href="#"><span onclick="openCart()">Shopping Cart</span></a>
+                </div>
           </div>
-
-    </section>
-
-    <script> 
-                function openNav() { 
-                    document.getElementById("mySidenav").style.width = "100%"; 
-                    // document.getElementById("main").style.marginLeft = "250px"; 
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.5)"; 
-                } 
-
-                 function closeNav() { 
-                    document.getElementById("mySidenav").style.width = "0"; 
-                    // document.getElementById("main").style.marginLeft= "0"; 
-                    document.body.style.backgroundColor = "white"; 
-                } 
-    </script> 
-
-    <section>
-<!-- search sidebar will appear while clicking the search icon -->
-    <div id="mySearch" class="sidesearch">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
-           <h3 class="big-title">Search</h3>
-           <div id="sideSearch-container">
-              <form action="#" class="input_form"> 
-              <h3 id="sideSearch-info">Enter Your Search Below</h3>
-              <input type="text" name=" 1" Placeholder="New Arrivals" class="input_account"> </form>
-              <button type="button" class="search-button">Search</button>
-          </div>
-    <!--<img src="img/search-icon.png" class="search-pop" title="search"> -->
-    </div>
-
-    <script> 
-                function openSearch() { 
-                    document.getElementById("mySearch").style.width = "100%";   
-
-                    // document.getElementById("main").style.marginLeft = "250px"; 
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
-                } 
-       
-                function closeSearch() { 
-                    document.getElementById("mySearch").style.width = "0"; 
-                    // document.getElementById("main").style.marginLeft= "0"; 
-                    document.body.style.backgroundColor = "white"; 
-                } 
-            </script> 
-
       </section>
 
-      <!-- Use any element to open the sidenav -->
-          <div class="hamburger">
-            <span onclick="openNav()"><img src="img/burger.png" title="hamburger"></span>
-            <a href="index.html"><p class="small-logo">CHRON</p></a>
-          </div>
-       
-      <!--  icons with small screen size -->
-          <div class="search-small">  
-                 <span onclick="openSearch()"><img src="img/search.png" class="search" title="search"></span> 
-          </div> 
+      <script> 
+                  function openNav() { 
+                      document.getElementById("mySidenav").style.width = "100%"; 
+                      // document.getElementById("main").style.marginLeft = "250px"; 
+                      document.body.style.backgroundColor = "rgba(0,0,0,0.5)"; 
+                  } 
+
+                   function closeNav() { 
+                      document.getElementById("mySidenav").style.width = "0"; 
+                      // document.getElementById("main").style.marginLeft= "0"; 
+                      document.body.style.backgroundColor = "white"; 
+                  } 
+      </script> 
+
+    <section> <!-- search sidebar will appear while clicking the search icon -->
+            <div id="mySearch" class="sidesearch">
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+                   <h3 class="big-title">Search</h3>
+                   <div class="sideSearch-container">
+                        <form action="#" class="input_form"> 
+                        <h3 id="sideSearch-info">Enter Your Search Below</h3>
+                        <input type="text" name=" 1" Placeholder="New Arrivals" class="input_account"> </form>
+                        <button type="button" class="search-button">Search</button>
+                  </div>
+            </div>
+
+            <script> 
+                        function openSearch() { 
+                            document.getElementById("mySearch").style.width = "100%";  //width of the searcb side bar
+
+                            // document.getElementById("main").style.marginLeft = "250px"; 
+                            document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+                        } 
+               
+                        function closeSearch() { 
+                            document.getElementById("mySearch").style.width = "0"; 
+                            // document.getElementById("main").style.marginLeft= "0"; 
+                            document.body.style.backgroundColor = "white"; 
+                        } 
+              </script> 
+      </section> <!-- End of search sider bar -->
+
+            <!-- Use hamburger icon to open the sidenav -->
+            <div class="hamburger">
+                  <span onclick="openNav()"><img src="img/burger.png" alt="hamburger-icon" title="hamburger"></span>
+                  <a href="index.html"><p class="small-logo">CHRON</p></a>
+            </div>
+             
+            <!--  icons with small screen size -->
+            <div class="search-small">  
+                   <span onclick="openSearch()"><img src="img/search.png" class="search" alt="search-icon" title="search"></span> 
+            </div> 
 
       <!-- side bar shopping cart -->
       <section> 
           <div id="myCart" class="sidecart"> 
-              <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a> 
-              <h3 class="big-title">Shopping Cart (1)</h3>
-              <div id="sideSearch-container">
-                    <div class="cart-small">
-                          <img src="img/watch1.jpg"  alt="placeholder image">
-                    </div>
-                    <div class="cart_title">
-                         <h3>Product Name</a></h3>
-                         <h2 class="price">Chorn E Series</h2>
-                    </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a> 
+                <h3 class="big-title">Shopping Cart (1)</h3>
+                <div class="sideSearch-container">
 
-                    <div class="cart_title">
-                        <h3>Quantity</a></h3>
-                        <form action="#" class="input_form"> 
-                        <input type="text" name=" 1" Placeholder="1"> </form>
-                        <!-- <img src="img/trash.png" class="icon" alt="delete item"> -->
-                    </div>
+                      <div class="cart-small">
+                            <img src="img/PDP_watch_1.jpg"  alt="placeholder image">
+                      </div>
+                      <div class="cart_title">
+                           <h3>Product Name</h3>
+                           <h2 class="price">Rosendahl</h2>
+                      </div>
 
-                    <div class="cart_title" id="price">
-                         <h3>Total Price</h3>
-                         <h2 class="price">299 CAD</h2>
-                    </div>
-                    <div id="cart-check-out"> 
-                        <a href="account.html"><button type="button" class="">Check Out</button></a>
-                    </div>
-                </div>
-          </div>
-       
-            <script> 
-                function openCart() { 
-                    document.getElementById("myCart").style.width = "100%"; 
-                    // document.getElementById("main").style.marginLeft = "250px"; 
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
-                } 
-       
-                function closeCart() { 
-                    document.getElementById("myCart").style.width = "0"; 
-                    // document.getElementById("main").style.marginLeft= "0"; 
-                    document.body.style.backgroundColor = "white"; 
-                } 
-            </script> 
-      </section> 
+                      <div class="cart_title">
+                          <h3>Quantity</h3>
+                          <form action="#" class="input_form"> 
+                          <input type="text" name=" 1" Placeholder="1"> </form>
+                      </div>
 
+                      <div class="cart_title" id="price">
+                           <h3>Total Price</h3>
+                           <h2 class="price">165 CAD</h2>
+                      </div>
 
+                      <div id="cart-check-out"> 
+                          <form method="get" action="login.html">
+                          <button type="submit" onclick="login.html" class="">Check Out</button>
+                          </form>
+                      </div>
 
-
-  <div class="grid-row">
-            <div class="grid-col-12of12">
-              <h2 class="big-title">Chron Watches</h2>
+                  </div>
             </div>
-    </div>
-
-  <section>
-      <div class="grid-row">
-        <img class="grid-col-12of12 product-banner" src="img/product_banner.jpg" alt="placeholder image">
-      </div>
-<!-- 
-      <div class="content-text-list">
-          <h1 id="slogan">Catch the lapsing time.</h1>
-      </div> -->
-  </section>
-
-	<section>
-
-    <div class="grid-row">
-            <div class="grid-col-12of12">
-              <h2 class="big-title">New Arrivals</h2>
-            </div>
-    </div>
-
-		<div class="grid-row">
-      
-    	     <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/PDP_watch_1.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>ROSENDAHL</h3> <h3>CAD 165</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>ROSENDAHL<h1> <h2>CAD 165</h2> </a>
-                           </div>
-                      </div>
-          </div>  
-
-          <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch1.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>TIMELESS</h3> <h3>CAD 199</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>TIMELESS<h1> <h2>CAD 199</h2> </a>
-                           </div>
-                      </div>
-          </div>                             
-
-          <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch3.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>MONDAINE</h3> <h3>CAD 189</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>MONDAINE<h1> <h2>CAD 189</h2> </a>
-                           </div>
-                      </div>
-           </div>
+       
+          <script> 
+              function openCart() { 
+                  document.getElementById("myCart").style.width = "100%";  // width of the cart side bar
+                  // document.getElementById("main").style.marginLeft = "250px"; 
+                  document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
+              } 
      
+              function closeCart() { 
+                  document.getElementById("myCart").style.width = "0"; 
+                  // document.getElementById("main").style.marginLeft= "0"; 
+                  document.body.style.backgroundColor = "white"; 
+              } 
+          </script> 
 
-          <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch4.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>10.10</h3> <h3>CAD 159</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>10.10<h1> <h2>CAD 159</h2> </a>
-                           </div>
-                      </div>
-          </div>    
+      </section>  <!-- End of side bar shopping cart -->
 
-    </div>
 
-    <div class="grid-row">
-            <div class="grid-col-12of12">
-              <h2 class="big-title">Collections</h2>
+
+        <div class="grid-row">
+                  <div class="grid-col-12of12">
+                    <h2 class="big-title">Chron Watches</h2>
+                  </div>
+        </div>
+
+        <section>
+            <div class="grid-row">
+              <img class="grid-col-12of12 product-banner" src="img/product_banner.jpg" alt="placeholder image">
             </div>
-    </div>
+        </section>
 
-    <div class="grid-row">
-      
-           <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch5.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>NOCS ATELIER</h3> <h3>CAD 265</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>NOCS ATELIER<h1><h2>CAD 265</h2></a>
-                           </div>
-                      </div>
-          </div>  
+        <div class="grid-row">
+                <div class="grid-col-12of12">
+                  <h2 class="big-title">New Arrivals</h2>
+                </div>
+        </div>
 
-          <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch6.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>PROJECTS JOTY</h3> <h3>CAD 160</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>PROJECTS JOTY<h1> <h2>CAD 160</h2> </a>
-                           </div>
-                      </div>
-          </div>                             
+      		  <div class="grid-row">  <!-- Watch List at big screen -->
+            
+            	     <div class="grid-col-1of4 container product-list-item">
+                          <a href="detailed_product_view.html"><img src="img/PDP_watch_1.jpg" class="image" alt="placeholder image"></a>
+                          <div class="hidden-product-info"> <h3>ROSENDAHL</h3><h3>CAD 165</h3> </div> <!-- Hidden Description for the small devices which don't support hover effect -->
+                              <div class="middle"> 
+                                   <div class="text"><a href="detailed_product_view.html"><h1>ROSENDAHL</h1> <h2>CAD 165</h2> </a>
+                                   </div>
+                              </div>
+                  </div>  
 
-          <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch7.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>SQUARESTREET</h3> <h3>CAD 279</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>SQUARESTREET<h1> <h2>CAD 279</h2> </a>
-                           </div>
-                      </div>
-           </div>
+                  <div class="grid-col-1of4 container product-list-item">
+                          <a href="detailed_product_view.html"><img src="img/watch1.jpg" class="image" alt="placeholder image"></a>
+                          <div class="hidden-product-info"> <h3>TIMELESS</h3> <h3>CAD 199</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                              <div class="middle"> 
+                                   <div class="text"><a href="detailed_product_view.html"><h1>TIMELESS</h1> <h2>CAD 199</h2> </a>
+                                   </div>
+                              </div>
+                  </div>                             
 
-          <div class="grid-col-1of4 container product-list-item">
-                  <a href="detailed_product_view.html"><img src="img/watch8.jpg" class="image" alt="placeholder image"></a>
-                  <div class="hidden-product-info"> <h3>BRAUN</h3> <h3>CAD 259</h3> </div>
-                      <div class="middle"> 
-                           <div class="text"><a href="detailed_product_view.html"><h1>BRAUN<h1> <h2>CAD 259</h2> </a>
-                           </div>
-                      </div>
-          </div>    
+                  <div class="grid-col-1of4 container product-list-item">
+                          <a href="detailed_product_view.html"><img src="img/watch3.jpg" class="image" alt="placeholder image"></a>
+                          <div class="hidden-product-info"> <h3>MONDAINE</h3> <h3>CAD 189</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                              <div class="middle"> 
+                                   <div class="text"><a href="detailed_product_view.html"><h1>MONDAINE</h1> <h2>CAD 189</h2> </a>
+                                   </div>
+                              </div>
+                   </div>
+             
 
-    </div>
+                  <div class="grid-col-1of4 container product-list-item">
+                          <a href="detailed_product_view.html"><img src="img/watch4.jpg" class="image" alt="placeholder image"></a>
+                          <div class="hidden-product-info"> <h3>10.10</h3> <h3>CAD 159</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                              <div class="middle"> 
+                                   <div class="text"><a href="detailed_product_view.html"><h1>10.10</h1> <h2>CAD 159</h2> </a>
+                                   </div>
+                              </div>
+                  </div>    
+          </div>
+
+          <div class="grid-row">
+                  <div class="grid-col-12of12">
+                    <h2 class="big-title">Collections</h2>
+                  </div>
+          </div>
+
+          <div class="grid-row">        
+                     <div class="grid-col-1of4 container product-list-item">
+                            <a href="detailed_product_view.html"><img src="img/watch5.jpg" class="image" alt="placeholder image"></a>
+                            <div class="hidden-product-info"> <h3>NOCS ATELIER</h3> <h3>CAD 265</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                                <div class="middle"> 
+                                     <div class="text"><a href="detailed_product_view.html"><h1>NOCS ATELIER</h1><h2>CAD 265</h2></a>
+                                     </div>
+                                </div>
+                     </div>  
+
+                     <div class="grid-col-1of4 container product-list-item">
+                            <a href="detailed_product_view.html"><img src="img/watch6.jpg" class="image" alt="placeholder image"></a>
+                            <div class="hidden-product-info"> <h3>PROJECTS JOTY</h3> <h3>CAD 160</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                                <div class="middle"> 
+                                     <div class="text"><a href="detailed_product_view.html"><h1>PROJECTS JOTY</h1> <h2>CAD 160</h2> </a>
+                                     </div>
+                                </div>
+                     </div>                             
+
+                     <div class="grid-col-1of4 container product-list-item">
+                            <a href="detailed_product_view.html"><img src="img/watch7.jpg" class="image" alt="placeholder image"></a>
+                            <div class="hidden-product-info"> <h3>SQUARESTREET</h3> <h3>CAD 279</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                                <div class="middle"> 
+                                     <div class="text"><a href="detailed_product_view.html"><h1>SQUARESTREET</h1> <h2>CAD 279</h2> </a>
+                                     </div>
+                                </div>
+                     </div>
+
+                     <div class="grid-col-1of4 container product-list-item">
+                            <a href="detailed_product_view.html"><img src="img/watch8.jpg" class="image" alt="placeholder image"></a>
+                            <div class="hidden-product-info"> <h3>BRAUN</h3> <h3>CAD 259</h3> </div><!-- Hidden Description for the small devices which don't support hover effect -->
+                                <div class="middle"> 
+                                     <div class="text"><a href="detailed_product_view.html"><h1>BRAUN</h1> <h2>CAD 259</h2> </a>
+                                     </div>
+                                </div>
+                     </div>    
+
+          </div>
 
 
 <!-- Footer Content-->      
       <section>
-        <div class="grid-row">
-            <div class="grid-col-12of12 grey-bg">
-                   <ul class="footer-ul">
-                      <li class="footer-component"><a href = "#">FQA</a></li>
-                      <li class="footer-component"><a href = "#">RETURNS</a></li>
-                      <li class="footer-component"><a href = "#">SHIPPING</a></li>
-                      <li class="footer-component"><a href = "#">CONTACT</a></li>
-                      <li class="footer-component"><a href = "#">STORE FINDER</a></li>
-                   </ul>
-              </div>
-          </div>  
+             <div class="grid-row">
+                   <div class="grid-col-12of12 grey-bg">
+                           <ul class="footer-ul">
+                                <li class="footer-component"><a href = "#">FQA</a></li>
+                                <li class="footer-component"><a href = "#">RETURNS</a></li>
+                                <li class="footer-component"><a href = "#">SHIPPING</a></li>
+                                <li class="footer-component"><a href = "#">CONTACT</a></li>
+                                <li class="footer-component"><a href = "#">STORE FINDER</a></li>
+                           </ul>
+                    </div>
+             </div>  
 
-          <div class="grid-row">
-               <div class="grid-col-12of12 grey-bg">
-                  <div class= "footer-icons">
-                      <div class="center-container">
-                          <div class="icon">
-                            <img src="img/FacebookFilled.png" title="facebook-icon">
+             <!-- icons for social media -->
+             <div class="grid-row">
+                   <div class="grid-col-12of12 grey-bg">
+                      <div class= "footer-icons">
+                          <div class="center-container">
+                              <div class="icon">
+                                <img src="img/FacebookFilled.png" alt="fb-icon" title="facebook-icon">
+                              </div>
+                              <div class="icon">
+                                <img src="img/InstagramFilled.png" alt="ins-icon" title="instagram-icon">
+                              </div>
+
+                              <div class="icon">
+                                <img src="img/SnapchatFilled.png" alt="snap-icon" title="snapchat-icon">
+                              </div>
+
+                              <div class="icon">
+                                <img src="img/PinterestFilled.png" alt="pin-icon" title="pinterest-icon">
+                            </div>
                           </div>
-
-                          <div class="icon">
-                            <img src="img/InstagramFilled.png" title="instagram-icon">
-                          </div>
-
-                          <div class="icon">
-                            <img src="img/SnapchatFilled.png" title="snapchat-icon">
-                          </div>
-
-                          <div class="icon">
-                            <img src="img/PinterestFilled.png" title="pinterest-icon">
-                        </div>
                       </div>
-                  </div>
-                </div>
-            </div>
+                    </div>
+               </div>
 
-            <div class="grid-row">
-                <div class="grid-col-12of12 grey-bg">       
-                       <ul class="footer-ul">
-                          <li class="footer-reference"><a href="#">STYLE GUIDE</a></li>
-                          <li class="footer-reference">|</li>
-                          <li class="footer-reference"><a href="#">CITATIONS</a></li>
-                          <li class="footer-reference">|</li>
-                          <li class="footer-reference"><a href="#">SITE MAP</a></li>
-                          <li class="footer-reference">|</li>
-                          <li class="footer-reference"><a href="#">REPOSITORY</a></li>
-                       </ul>
-                  </div>
-            </div>
+               <!-- content for Andrew and Ethan -->
+               <div class="grid-row">
+                    <div class="grid-col-12of12 grey-bg">       
+                           <ul class="footer-ul">
+                              <li class="footer-reference"><a href="#">STYLE GUIDE</a></li>
+                              <li class="footer-reference">|</li>
+                              <li class="footer-reference"><a href="#">CITATIONS</a></li>
+                              <li class="footer-reference">|</li>
+                              <li class="footer-reference"><a href="#">SITE MAP</a></li>
+                              <li class="footer-reference">|</li>
+                              <li class="footer-reference"><a href="#">REPOSITORY</a></li>
+                           </ul>
+                      </div>
+                </div>
 
           </section>
+          <!-- End of Footer Content-->  
+
   </body>
 </html>

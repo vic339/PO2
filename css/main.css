@@ -628,7 +628,7 @@ section{
     display: inline-block;
 }
 
-#sideSearch-container{
+.sideSearch-container{
   width:60%;
   margin: 3rem auto;
 /*  border:1px solid red;*/
