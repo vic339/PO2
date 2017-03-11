@@ -75,7 +75,6 @@ a{
 }
 
 .logo{
-  font-style: bold;
   font-size: 20px;
   padding-right: 2em;
 }
@@ -203,7 +202,6 @@ img{
 
 button{
   padding: 0.5em 5em 0.5em 5em;
-  background-color: black;
   color: white;
   border: 1px solid rgb(0,0,0);
   font-size: 13px;
@@ -211,6 +209,7 @@ button{
   transition: all 0.5s ease;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background-color: black;
 }
 
 button:hover{
@@ -719,7 +718,6 @@ h3#sideSearch-info{
 .cart-small{
   padding: 0em 2.5em;
   margin-top: 1em;
-  text-align: center；
 }
 
 .cart-small img{
@@ -1267,3 +1265,52 @@ section.events-wrapper{
     float:left;
     padding: 0 3rem;
 }/*end of product detail*/
+
+/*citation pages*/
+.citation-page{
+  padding-left: 2rem;
+
+}
+
+.citation-page-items{
+  padding-left: 2rem;
+  font-size:20px;
+
+}
+
+.citation-page-items a{
+  padding-left: 2rem;
+
+}
+
+.citation-page a{
+  text-transform: none;
+  padding-left: 2rem;
+}
+
+.citation-page p{
+  line-height:0.2;
+}
+.citation-page h2{
+  font-size: 25px;
+  text-align: center;
+  color:black;
+}
+
+.citation-page h3{
+  font-size: 20px;
+  padding-left: 2rem;
+  color:black;
+}
+
+.ciatation-page button{
+  margin-left:10rem;
+}
+
+.cia-button{
+  text-align:right;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+
