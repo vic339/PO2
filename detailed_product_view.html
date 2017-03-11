@@ -178,117 +178,146 @@
       </section>  <!-- End of side bar shopping cart -->
 
 
-  	<div class="grid-row content-wrapper">
-
-      <div class="grid-col-2of12 leftmargin">  
-
-  			<div class="grid-col-12of12 review-header">
-  					<img class="img-pdp" src="img/PDP_watch_1.jpg" alt="placeholder image" >
-        </div>
-        <div class="grid-col-12of12 review-header">
-            <img class="img-pdp" src="img/PDP_watch_2.jpg" alt="placeholder image" >
-        </div>
-        <div class="grid-col-12of12 review-header">
-            <img class="img-pdp" src="img/PDP_watch_3.jpg" alt="placeholder image" >
-        </div>
-        <div class="grid-col-12of12 review-header">
-            <img class="img-pdp" src="img/PDP_watch_4.jpg" alt="placeholder image" >
-        </div>
-      </div>
-
-      <div class="grid-col-5of12">
-          <img class="img-pdp"  src="img/PDP_watch_1.jpg" alt="placeholder image">
-      </div>
-            <div class="grid=col-1of2">
-            	<h1>Rosendahl</h1>
-              <h3>Picto 30mm</h3>
-            	<h3>CAD 165</h3>
-            	<button type="button">Add to Cart</button>
-
-        <div class="tab">
-          <button class="tabButton" onclick="tab1(event,'Description')">Description</button>
-          <button class="tabButton" onclick="tab2(event,'Details')">Details</button>
-          <!-- <a href="javascript:void(0)" class="tablinks" onclick="tab1(event,'Description')">Description</a>
-          <a href="javascript:void(0)" class="tablinks" onclick="tab1(event,'Details')">Details</a> -->
-        </div>
-      
-            
-            <div id="Description">
-            	<h3>Description</h3>
-            	<p >The Picto watch is a Danish design classic that aims to capture a picture of time. </p>
-              <p >Taking its name from the word “pictogram”, the Picto marks the hours with a steel dot affixed to a rotating watch face. The minute hand moves as normal. </p>
-              <p >The dot appears to move around the dial to depict the earth moving and time passing. </p>
-              <p >The minimal watch face doesn’t feature indices, date windows or branding – but it does come in a wide variety of colours. </p>
-              <p >The black dial is paired with a black stainless-steel 30mm case, a black rubber strap and a hardened mineral glass lens.  </p>
-
-              <p >Its unique mechanism is powered by a Japanese Quartz movement, and has earned the watch a place in the permanent collection at New York’s Museum of Modern Art. </p>
-            </div>
-
-   <div id="Details" class="right">
-            
-              <h3>Details</h3>
-              <div class="grid-col-1of2">
-
-                <p>Designer</p>
-                <p>Case material</p>
-                <p>Case diameter</p>
-                <p>Lens</p>
-                <p>Straps</p>
-                <p>Strap Length</p>
-                <p>Mechanism</p>
-                <p>Water resistance</p>
-                <p>Warranty</p>
-                <p>Colour</p>
-              
-
-              </div>
-              <div class="grid-col-1of2">
-
-                <p>Steen Georg Christensen </p>
-                <p>IP rose gold stainless steel</p>
-                <p>30mm</p>
-                <p>Hardened mineral glass</p>
-                <p>Rubber</p>
-                <p>235mm</p>
-                <p>Miyota 2025</p>
-                <p>3 ATM</p>
-                <p>2 years</p>
-                <p>Black</p>
-
-              </div>
-            
-
-
-	</div>
-
-
-	<div class="grid-row ">
-
 
 <section>
-      <div class="grid-col-12of12 review-header">
-        <h2>Reviews</h2>
-      </div>
-      </section>
 
-      <section>
-      <div class="grid-col-12of12 review">
+  <div class="grid-row" id="product-intro">
+
+     <div class="grid-col-1of2" id="product-image">
+      <div class="pdp-container">
+        <img id="big-image" class="img-pdp" src="img/PDP_watch_1.jpg" alt="placeholder image">
+      </div> 
+
+     <div class="image-list-container">
+         <div class="grid-col-1of4"><img class="img-pdp" src="img/PDP_watch_1.jpg" onclick="showImage('img/PDP_watch_1.jpg');" alt="placeholder image" ></div>
+         <div class="grid-col-1of4"> <img class="img-pdp" src="img/PDP_watch_2.jpg" onclick="showImage('img/PDP_watch_2.jpg');" alt="placeholder image" ></div>
+         <div class="grid-col-1of4"><img class="img-pdp" src="img/PDP_watch_3.jpg" onclick="showImage('img/PDP_watch_3.jpg');"alt="placeholder image" ></div>
+         <div class="grid-col-1of4">  <img class="img-pdp" src="img/PDP_watch_4.jpg" onclick="showImage('img/PDP_watch_4.jpg');" alt="placeholder image" ></div>
+     </div>
+    </div>
+    
+
+
+
+    <div class="grid-col-1of2" id="product-text">
+        <div class="pdp-container">
+             
+            <div class="grid=col-1of2 product-info">
+              <h1>Rosendahl</h1>
+              <h3>30mm</h3>
+              <h3>CAD 165</h3>
+              <button onclick="myFunction()" type="button" id="add-product">ADD TO CART</button>
+                          <script>
+                          function myFunction() {
+                              confirm("Rosendahl has already been added into your cart!");
+                          }
+                          </script>
+            </div>
+
+             <!-- description -->
+
+            <div id="description">
+                <p >The Picto watch is a Danish design classic that aims to capture a picture of time. </p>
+                <p >Taking its name from the word “pictogram”, the Picto marks the hours with a steel dot affixed to a rotating watch face. The minute hand moves as normal. </p>
+                <p >The dot appears to move around the dial to depict the earth moving and time passing. </p>
+                <p >The minimal watch face doesn’t feature indices, date windows or branding – but it does come in a wide variety of colours. </p>
+                <p >The black dial is paired with a black stainless-steel 30mm case, a black rubber strap and a hardened mineral glass lens.  </p>
+
+                <p >Its unique mechanism is powered by a Japanese Quartz movement, and has earned the watch a place in the permanent collection at New York’s Museum of Modern Art. </p>
+            </div>
+
+            <div id="delivery">
+                        <p>All our watches are shipped worldwide free of charge, via a tracked service and require a signature upon delivery. We ship via UPS to UK mainland addresses, and via FedEx for the EU and rest of the world.</p>
+                        <p>Express delivery options are available at the checkout for customers in the UK and USA, charged at £5 for UK Express next working day, and £10 for USA Express next working day delivery. Express delivery orders must be placed before 1pm GMT for same day dispatch. Any orders placed after 1pm GMT, over the weekend or on a UK bank holiday will be dispatched the next working day.</p>
+                        <p>Customers are able to return or exchange full price watches that are unsuitable or unwanted as long as they are unworn, within 28 days of receipt. Watches must be returned in a resalable condition without any visible marks to the face or strap and include all original packaging, tags and manuals. The cost of return postage is not refundable. Customers wishing to return sale items have 7 days from receipt of goods to request a return or exchange.</p>
+                        <p>Unfortunately we are currently unable to accept orders with PO box and APO addresses.</p>
+            </div>
+
+             <div class="tab">
+                 <div id="underline">
+
+                      <div class="tab-item grid-col-1of2">
+                      <div id="des-bottom"><h3 onclick="show();">Description</h3></div>
+                      </div>
+
+                      <div class="tab-item grid-col-1of2">
+                      <div id="delivery-bottom"><h3 onclick="showDetail1()">Delivery</h3></div>
+                      </div>
+
+                  </div>
+              </div>
+        </div> 
+    </div>
+  </div>    
+
+</section>
+
+
+<section class="grid-row detail-wrapper">
+
+  <!-- first part -->
+
+          <div class="detail-left-half grid-col-1of2"> 
+                <img src="img/watch100.jpg" alt="camera image">
+           </div>
+ 
+
+           <div class="detail-right-half grid-col-1of2">
+                  
+                  <h1>"Rosendahl" series</h1>
+                  <p> Danish homeware brand Rosendahl began adapting wall clocks by modernist architect Arne Jacobsen into wristwatches after his death in 1971.</p>
+                  <p>READ MORE</p>
+           </div> 
+
+<!-- second part -->
+
+  <div class="grid-row">
+          <div class="detail-second-left-half grid-col-1of2">
+                  
+                  <h1>About the brand</h1>
+                  <p> Chron is one of the world's most popular and influential watch store, we sell more than 30 brands of watches which are from all over the world. </p>
+                  <p> Our mission is simple: to bring you a carefully edited selection of the best designed watches in the world and live in a easy way of life.</p>
+
+            </div>
+                  
+             <div class="detail-second-right-half grid-col-1of2"> 
+                  <img src="img/watch56.jpg" alt="camera image">
+            </div> 
+        </div>
+
+</section>
+
+<!-- review part-->
+
+<section class="review-wrapper">
+
+    <div class="grid-row ">
+        <div class="grid-col-12of12 review-header">
+          <h2>Reviews</h2>
+        </div>
+
+
+ <section>
+    <div class="grid-row ">
+        <div class="grid-col-11of12 review">
         <div class="grid-col-1of4">
-    				
-       		<span>★ </span><span>★ </span><span>★ </span><span>★ </span><span>☆</span> 
+            
+          <span>★ </span><span>★ </span><span>★ </span><span>★ </span><span>☆</span> 
           <p>Chloe Bart<br>
           2 days ago</p>
+          </div>
 
-  			</div>
+          <div class="grid-col-3of4"> 
+              <p>The latest collection is super fresh - wonderful designs. It will make a great addition to my outfit. Ultra-quick delivery. Full support! Looking forward to the next card deck that comes out!</p>
+          </div>
+        </div>
 
-        <div class="grid-col-3of4"> 
-            <p> I purchased this watch several months ago...</p>
-        </div>
-        </div>
       </section>
+ 
 
       <section>
-      <div class="grid-col-12of12 review">
+      <div class="grid-row ">
+      <div class="grid-col-11of12 review">
         <div class="grid-col-1of4">
             
           <span>★ </span><span>★ </span><span>★ </span><span>★ </span><span>☆</span> 
@@ -298,13 +327,16 @@
         </div>
 
         <div class="grid-col-3of4"> 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum nisl sed lectus pellentesque porttitor. Nulla facilisi. Quisque ornare sapien magna, id congue turpis scelerisque dictum. Phasellus posuere vitae neque nec convallis. Proin nec consectetur quam. Cras pellentesque aliquet massa vitae malesuada. Praesent tristique ultrices tincidunt.</p>
+            <p>Chron is awesome. I was browsing through Elle magazine when I stumbled upon this Simply designed watch. I rolled through Amsterdam last week for a shoot and decided to pick them up - cool people! You can bet that my eyes are on the next collection.</p>
         </div>
         </div>
       </section>
 
+
+
       <section>
-      <div class="grid-col-12of12 review">
+      <div class="grid-row ">
+      <div class="grid-col-11of12 review">
         <div class="grid-col-1of4">
             
           <span>★ </span><span>★ </span><span>★ </span><span>★ </span><span>☆</span> 
@@ -314,23 +346,27 @@
         </div>
 
         <div class="grid-col-3of4"> 
-            <p>Nulla facilisi. Quisque ornare sapien magna, id congue turpis scelerisque dictum. Phasellus posuere vitae neque nec convallis. Proin nec consectetur quam. Cras pellentesque aliquet massa vitae malesuada. Praesent tristique ultrices tincidunt.</p>
+            <p>I’ve always been a big fan minimalism - so it’s cool to see some of these shapes making their way onto a watch. Great concept, cool designs - just good clean fun.</p>
         </div>
         </div>
       </section>
 
-	</div>
+        <section>
+          <div class="grid-row">
+           
+              <div class="grid-col-3of4">
+                <div class="grid-col-3of4 leave-review">
+                      <textarea rows="3"> </textarea>
+                </div>
+              </div>
 
-  <section>
-    <div class="grid-col-12of12">
-      <div class="grid-col-3of4">
-            <textarea rows="10"> Leave a review :)</textarea>
-      </div>
-      <div class="grid-col-1of4">
-        <button class="review-button" type="button">Leave a review</button>
-      </div>
+              <div class="grid-col-1of4">
+                <button class="review-button" type="button">LEAVE A REVIEW</button>
+              </div>
 
-    </div>
+        </div>
+        </section>
+
   </section>
 
 <!-- Footer Content-->      
@@ -389,6 +425,33 @@
           </section>
           <!-- End of Footer Content-->      
 
+        <script type="text/javascript">
+        
+          
+        function show(){
+          document.getElementById("description").style.display= "block";
+          document.getElementById("delivery").style.display= "none"; 
+          document.getElementById("des-bottom").style.borderBottom= "2px solid black";
+          document.getElementById("delivery-bottom").style.borderBottom= "";
+                  // document.getElementById("des-bottom").style.border= "2px";
+        }
+       
+         function showDetail1(){
+          document.getElementById("delivery").style.display= "block";
+          document.getElementById("description").style.display= "none";
+          document.getElementById("delivery-bottom").style.borderBottom= "2px solid black";
+            document.getElementById("des-bottom").style.borderBottom= "";
+         
+        }
 
+
+        function showImage(image){
+        var bigImage=document.getElementById("big-image");
+        bigImage.src=image;
+
+        }
+
+
+        </script>
   </body>
 </html>
