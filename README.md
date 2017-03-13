@@ -3,7 +3,7 @@
 Team of Three
 
 Product: 
-  CHRON watch, a minimalism designed Watchware
+  CHRON watch, a minimalism designed, yet delicate watchware.
   
 Team members:
   Airywolf      : Rex Shi
