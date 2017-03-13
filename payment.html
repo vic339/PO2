@@ -229,21 +229,33 @@
 
             <div class="grid-col-1of3 payment-box">
                       <h3>Summary</h3>
-                      <img src="img/PDP_watch_1.jpg" alt="placeholder image">
+                            <img src="img/PDP_watch_1.jpg" alt="placeholder image">
                       <h2 class="price">Rosendahl</h2>
                       <h3>Total Price</h3>
                       <p>165 CAD * 1</p>
-                      <button onclick="myFunction()" type="button" class="login-button">Review Order</button>
-                          <script>
-                          function myFunction() {
-                              confirm("Rosendahl *1 Total price: CAD 165, Ready to purchase a chron watch?");
-                          }
-                          </script>
+                      <div id="review-order-container">
+                            <a href="#popup-screen">REVIEW ORDER</a>  
+                       </div>
             </div>
       </div>
 
-<!-- Footer Content-->      
-      <section>
+<!--  popup screen after clicking  -->
+      <div id="popup-screen">
+               <h1 class="big-title">YOUR ORDER</h1>
+                   <p>Product: Rosendahl<p> 
+                   <p>Amount: 1</p>
+                   <p>Total price: CAD 165</p>
+               <form method="get" action="login.html">
+                    <button type="submit" onclick="login.html" class="">CONFIRM TO PAY</button>
+               </form>
+                    <a href="#">Edit Your Order?</a>
+                    <a href="#" class="cancel">&times;</a>
+      </div>
+      <!-- black overlay -->
+      <div id="cover"></div> 
+      
+<!-- ! Footer Content-->      
+       <section>
              <div class="grid-row">
                    <div class="grid-col-12of12 grey-bg">
                            <ul class="footer-ul">
@@ -254,11 +266,8 @@
                                 <li class="footer-component"><a href = "#">STORE FINDER</a></li>
                            </ul>
                     </div>
-             </div>  
 
-             <!-- icons for social media -->
-             <div class="grid-row">
-                   <div class="grid-col-12of12 grey-bg">
+                          <div class="grid-col-12of12 grey-bg">
                       <div class= "footer-icons">
                           <div class="center-container">
                               <div class="icon">
@@ -278,25 +287,34 @@
                           </div>
                       </div>
                     </div>
-               </div>
 
-               <!-- content for Andrew and Ethan -->
-               <div class="grid-row">
-                    <div class="grid-col-12of12 grey-bg">       
+
+                     <div class="grid-col-12of12 grey-bg">       
                            <ul class="footer-ul">
                               <li class="footer-reference"><a href="http://www.sfu.ca/~vji/IAT339/styleguide_CHRON/styleguide_CHRON.html">STYLE GUIDE</a></li>
                               <li class="footer-reference">|</li>
                               <li class="footer-reference"><a href="citation.html">CITATIONS</a></li>
                               <li class="footer-reference">|</li>
-                              <li class="footer-reference"><a href="sitemap.html">SITEMAP</a></li>
+                              <li class="footer-reference"><a href="sitemap.html">SITE MAP</a></li>
                               <li class="footer-reference">|</li>
                               <li class="footer-reference"><a href="http://github.com/vic339/PO2">REPOSITORY</a></li>
                            </ul>
                       </div>
-                </div>
 
-          </section>
-          <!-- End of Footer Content-->  
+             </div> 
+
+             <!-- icons for social media -->
+             
+             
+               
+
+              <!--  content for Andrew and Ethan -->
+              
+                   
+              
+
+          </section> 
+          <!-- End of Footer Content--> 
 
   </body>
 

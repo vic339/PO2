@@ -184,8 +184,9 @@
   <div class="grid-row" id="product-intro">
 
      <div class="grid-col-1of2" id="product-image">
-      <div class="pdp-container">
-        <img id="big-image" class="img-pdp" src="img/PDP_watch_1.jpg" alt="placeholder image">
+        <div class="pdp-container">
+          <img id="big-image" class="img-pdp" src="img/PDP_watch_1.jpg" alt="placeholder image">
+          
       </div> 
 
      <div class="image-list-container">
@@ -198,19 +199,16 @@
     
 
     <div class="grid-col-1of2" id="product-text">
-        <div class="pdp-container">
-             
+        <div class="pdp-container">        
             <div class="grid=col-1of2 product-info">
-              <h1>Rosendahl</h1>
-              <h3>30mm</h3>
-              <h3>CAD 165</h3>
-              <button onclick="myFunction()" type="button" id="add-product">ADD TO CART</button>
-                          <script>
-                          function myFunction() {
-                              confirm("Rosendahl has already been added into your cart!");
-                          }
-                          </script>
+                <h1>Rosendahl</h1>
+                <h3>30mm</h3>
+                <h3>CAD 165</h3>
+                <div id="add-to-cart-container">
+                      <a href="#popup-screen">ADD TO CART</a>  
+                </div>
             </div>
+            
 
              <!-- description -->
 
@@ -227,12 +225,11 @@
             <div id="delivery">
                         <p>All our watches are shipped worldwide free of charge, via a tracked service and require a signature upon delivery. We ship via UPS to UK mainland addresses, and via FedEx for the EU and rest of the world.</p>
                         <p>Express delivery options are available at the checkout for customers in the UK and USA, charged at £5 for UK Express next working day, and £10 for USA Express next working day delivery. Express delivery orders must be placed before 1pm GMT for same day dispatch. Any orders placed after 1pm GMT, over the weekend or on a UK bank holiday will be dispatched the next working day.</p>
-                        <p>Customers are able to return or exchange full price watches that are unsuitable or unwanted as long as they are unworn, within 28 days of receipt. Watches must be returned in a resalable condition without any visible marks to the face or strap and include all original packaging, tags and manuals. The cost of return postage is not refundable. Customers wishing to return sale items have 7 days from receipt of goods to request a return or exchange.</p>
                         <p>Unfortunately we are currently unable to accept orders with PO box and APO addresses.</p>
             </div>
 
              <div class="tab">
-                 <div id="underline">
+              
 
                       <div class="tab-item grid-col-1of2">
                       <div id="des-bottom"><h3 onclick="show();">Description</h3></div>
@@ -242,7 +239,6 @@
                       <div id="delivery-bottom"><h3 onclick="showDetail1()">Delivery</h3></div>
                       </div>
 
-                  </div>
               </div>
         </div> 
     </div>
@@ -367,8 +363,25 @@
 
   </section>
 
-<!-- Footer Content-->      
-      <section>
+<!--  popup screen after clicking  -->
+      <div id="popup-screen">
+               <h1 class="big-title">YOUR ITEM HAS BEEN ADDED TO CART!</h1>
+                   <p>Product: Rosendahl<p> 
+                   <p>Amount: 1</p>
+                   <p>Total price: CAD 165</p>
+               <form method="get" action="login.html">
+                    <button type="submit" onclick="login.html" class="">CHECK OUT</button>
+               </form>
+                    <a href="#">Edit Your Order?</a>
+                    <a href="#" class="cancel">&times;</a>
+      </div>
+
+      <!-- black overlay -->
+      <div id="cover"></div> 
+
+
+<!-- !-- Footer Content-->      
+       <section>
              <div class="grid-row">
                    <div class="grid-col-12of12 grey-bg">
                            <ul class="footer-ul">
@@ -379,11 +392,8 @@
                                 <li class="footer-component"><a href = "#">STORE FINDER</a></li>
                            </ul>
                     </div>
-             </div>  
 
-             <!-- icons for social media -->
-             <div class="grid-row">
-                   <div class="grid-col-12of12 grey-bg">
+                          <div class="grid-col-12of12 grey-bg">
                       <div class= "footer-icons">
                           <div class="center-container">
                               <div class="icon">
@@ -403,25 +413,34 @@
                           </div>
                       </div>
                     </div>
-               </div>
 
-               <!-- content for Andrew and Ethan -->
-               <div class="grid-row">
-                    <div class="grid-col-12of12 grey-bg">       
+
+                     <div class="grid-col-12of12 grey-bg">       
                            <ul class="footer-ul">
                               <li class="footer-reference"><a href="http://www.sfu.ca/~vji/IAT339/styleguide_CHRON/styleguide_CHRON.html">STYLE GUIDE</a></li>
                               <li class="footer-reference">|</li>
                               <li class="footer-reference"><a href="citation.html">CITATIONS</a></li>
                               <li class="footer-reference">|</li>
-                              <li class="footer-reference"><a href="sitemap.html">SITEMAP</a></li>
+                              <li class="footer-reference"><a href="sitemap.html">SITE MAP</a></li>
                               <li class="footer-reference">|</li>
                               <li class="footer-reference"><a href="http://github.com/vic339/PO2">REPOSITORY</a></li>
                            </ul>
                       </div>
-                </div>
 
-          </section>
-          <!-- End of Footer Content-->      
+             </div> 
+
+             <!-- icons for social media -->
+             
+             
+               
+
+              <!--  content for Andrew and Ethan -->
+              
+                   
+              
+
+          </section> 
+          <!-- End of Footer Content-->     
 
         <script type="text/javascript">
           

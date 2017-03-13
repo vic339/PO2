@@ -8,124 +8,26 @@
 	/*margin-top: -0.5em;*/
 }
 
-@-ms-viewport{
-  width: device-width;
-}
-
 .grid-row{
 	display:block;
 	margin: 2% auto 0 auto;
 	width: 100%;
+    height:auto;
 
 }
-.grid-row::after {
-	content: "";
-	display: inline-block;
-	clear: both;
-	padding-top: 0.5em;
-}
-
-
-/*
-@media (min-width: 0em) {
-
-	.grid-col-1of2 {
-		width: 50%;
-	}
-
-	.grid-col-1of2:last-of-type {
-		padding-left: 1rem;
-	}
-
-	.grid-col-1of4 {
-		width: 100%;
-	}
-
-	.grid-col-3of4{
-		width: 100%;
-	}
-	.grid-button{
-		width:100%;
-	}
-
-	#banner-content{
-		font-size: 0.2rem;
-	}
-
-	
+.grid-row:after {
+	content:"";
+	display:table;
+	clear:both;
 	
 }
 
-@media (min-width: 40em) {
-	
-	.grid-col-1of3 {
-		width: 50%;
-	}
-
-	.grid-col-3of4{
-		width: 100%;
-	}
-	.grid-col-1of4 {
-		width: 100%;
-	}
-	.grid-button{
-		width:40%;
-	}
-
-	#banner-content{
-		font-size: 0.5rem;
-	}
-
-	
-
-}
-@media (min-width: 73em) {
-
-	.grid-col-1of2 {
-		width: 50%;
-	}
-
-	.grid-col-2of3 {
-		width: 66.666%;
-	}
-
-	.grid-col-1of3 {
-		width: 33.3%;
-	}
-	.grid-col-3of4{
-		width: 75%;
-	}
-	.grid-col-1of4 {
-		width: 25%;
-	}
-
-	.grid-button{
-		width: 20%;
-	}
-
-	.grid-side{
-		width: 5%;
-		text-align: vertical;
-	}
-
-	.grid-main{
-		width: 90%;
-	}
-
-	#banner-content{
-		font-size: 3rem;
-	}
-
-}*/
-
-	section .index-pic{
+section .index-pic{
 		display: none;
 	}
 	
 
-
 @media only screen and (max-width: 928px) {
-	
 	 
     .image-holder img{
     	display:block;
@@ -154,8 +56,16 @@
 
 @media only screen and (min-width: 48em) {
 
+	#phone-size h1{
+		display: none;
+	}
+
 	.hidden-product-info{
 		display: none;
+	}
+
+	#phone-size{
+	  display:block;
 	}
 
      .image-holder img{
@@ -173,8 +83,8 @@
 	.search-small{
 		display: none;
 	}
-}
 
+   
 	.grid-col-1of12 {
 		width: 6.5%;
 	}
@@ -227,6 +137,7 @@
 		width:100%; 
 		margin: 0;
 	}
+}
 
 
 @media only screen and (max-width: 30em) {
@@ -238,10 +149,15 @@
 	.hidden-content{
 		display: none;
 	}
+
+	 .right-half{
+     width:50%;
+	}
+
+
 	.text{
 		display: none;
 	}
-
 	.content-text{
 		display: none;
 	}
@@ -302,12 +218,16 @@
 
 @media only screen and (max-width: 48em) {
 
-	.nav{
+	.nav{ 
 		display: none;
 	}
 
 	.text{
 		display: none;
+	}
+
+	 .right-half{
+     width:98%;
 	}
 
 	.content-text-list{
